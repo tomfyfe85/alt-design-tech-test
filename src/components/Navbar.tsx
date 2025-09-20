@@ -58,6 +58,18 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         >
           Careers
         </a>
+        <a
+          href="/services"
+          className="absolute top-[83px] left-[206px] text-white text-[18px] hover:opacity-80"
+          style={{
+            fontFamily: "Inter",
+            fontWeight: 700,
+            lineHeight: "100%",
+            letterSpacing: "0%",
+          }}
+        >
+          Services
+        </a>
       </div>
     </nav>
   );
