@@ -3,7 +3,7 @@ import Navbar from "./components/NavBar";
 function App() {
   return (
     <>
-      <Navbar variant="purple700" />
+      <Navbar variant="transparent" />
     </>
   );
 }

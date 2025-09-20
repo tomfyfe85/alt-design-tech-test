@@ -12,6 +12,11 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
   const backGroundClass = variants[variant];
 
+  const borderClass =
+    variant === "transparent"
+      ? ""
+      : `border-b ${backGroundClass.replace("bg-", "border-")}`;
+
   const buttonVariants = {
     transparent: "bg-transparent border-2 border-white text-white",
     purple700: "bg-white text-purple-900",
@@ -23,7 +28,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     <nav
       className={`relative z-10 text-white w-[1512px] mx-auto ${backGroundClass}`}
     >
-      <div className="border-b border-purple-600 py-2 h-[120px]">
+      <div className={`py-2 h-[120px] ${borderClass}`}>
         <img
           srcSet="/DNS-White-Logo-1.png 4x"
           alt="DNS Document Network Services"
