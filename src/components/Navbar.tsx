@@ -82,6 +82,18 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         >
           Case Studies
         </a>
+        <a
+          href="/insights"
+          className="absolute top-[83px] left-[460px] text-white text-[18px] hover:opacity-80"
+          style={{
+            fontFamily: "Inter",
+            fontWeight: 700,
+            lineHeight: "100%",
+            letterSpacing: "0%",
+          }}
+        >
+          Insights
+        </a>
       </div>
     </nav>
   );
