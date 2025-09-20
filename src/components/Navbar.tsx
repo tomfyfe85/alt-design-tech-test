@@ -46,6 +46,18 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         >
           About us
         </a>
+        <a
+          href="/careers"
+          className="absolute top-[31px] left-[437px] w-55 h-17 text-white text-[13px] hover:opacity-80"
+          style={{
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 500,
+            lineHeight: "100%",
+            letterSpacing: "0%",
+          }}
+        >
+          Careers
+        </a>
       </div>
     </nav>
   );
