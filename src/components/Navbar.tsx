@@ -14,7 +14,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
   return (
     <nav
-      className={`relative z-10 text-white max-w-[1512px] mx-auto ${backGroundClass}`}
+      className={`relative z-10 text-white w-[1512px] mx-auto ${backGroundClass}`}
     >
       <div className="border-b border-purple-600 py-2 h-[120px]">
         <img
@@ -57,6 +57,18 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           }}
         >
           Careers
+        </a>
+        <a
+          href="/support"
+          className="absolute top-[31px] left-[1356px] w-117 h-17 text-white text-[13px] hover:opacity-80"
+          style={{
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 500,
+            lineHeight: "100%",
+            letterSpacing: "0%",
+          }}
+        >
+          Request support
         </a>
         <a
           href="/services"
