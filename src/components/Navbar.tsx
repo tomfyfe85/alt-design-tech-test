@@ -94,6 +94,18 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         >
           Insights
         </a>
+        <a
+          href="/contact"
+          className="absolute top-[83px] left-[562px] text-white text-[18px] hover:opacity-80"
+          style={{
+            fontFamily: "Inter",
+            fontWeight: 700,
+            lineHeight: "100%",
+            letterSpacing: "0%",
+          }}
+        >
+          Contact
+        </a>
       </div>
     </nav>
   );
