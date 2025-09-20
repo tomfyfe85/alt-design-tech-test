@@ -1,4 +1,10 @@
+import Navbar from "./components/Navbar";
+
 function App() {
-  return <div className="p-8 text-blue-500 text-2xl">Tailwind Test</div>;
+  return (
+    <>
+      <Navbar variant="transparent" />
+    </>
+  );
 }
 export default App;
