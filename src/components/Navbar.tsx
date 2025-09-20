@@ -12,6 +12,13 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
   const backGroundClass = variants[variant];
 
+  const buttonVariants = {
+    transparent: "bg-transparent border-2 border-white text-white",
+    purple700: "bg-white text-purple-900",
+  };
+
+  const buttonClass = buttonVariants[variant];
+
   return (
     <nav
       className={`relative z-10 text-white w-[1512px] mx-auto ${backGroundClass}`}
@@ -118,6 +125,21 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         >
           Contact
         </a>
+        <button
+          className={`absolute top-[69px] left-[1308px] rounded-[5px] flex items-center justify-center hover:opacity-80 ${buttonClass}`}
+          style={{
+            width: "165px",
+            height: "48px",
+            fontFamily: "Inter",
+            fontWeight: 700,
+            fontSize: "18px",
+            lineHeight: "normal",
+            letterSpacing: "0%",
+          }}
+          onClick={() => console.log("Call Me Back clicked")}
+        >
+          Call Me Back
+        </button>
       </div>
     </nav>
   );
