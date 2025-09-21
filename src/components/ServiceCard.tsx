@@ -2,14 +2,14 @@ import React from "react";
 
 interface ServiceCardProps {
   title: string;
-  //   description: string;
+  description: string;
   icon: React.ReactNode;
   //   learnMoreLink: string;
 }
 
 export default function ServiceCard({
   title,
-  //   description,
+  description,
   icon,
 }: //   learnMoreLink = "#",
 ServiceCardProps) {
@@ -57,22 +57,25 @@ ServiceCardProps) {
         {title}
       </h3>
 
-      {/* <p
+      <p
         className="text-gray-700 group-hover:text-white text-center leading-relaxed mb-6 px-4 transition-colors duration-300"
         style={{
+          position: "absolute",
+
           fontFamily: "IBM Plex Mono",
-          fontWeight: 100,
+          fontWeight: "350",
           fontSize: "12px",
           lineHeight: "23px",
           letterSpacing: "0%",
-          //   width: "235px",
-          //   height: "115px",
-
-          //   textAlign: "center",
+          width: "270px",
+          height: "115px",
+          top: "149px",
+          left: "10px",
+          textAlign: "center",
         }}
       >
         {description}
-      </p> */}
+      </p>
 
       {/* <div className="text-center">
         <a
