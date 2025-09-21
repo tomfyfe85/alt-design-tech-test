@@ -7,12 +7,15 @@ export default function LandingPage() {
       <Hero />
 
       <div style={{ position: "absolute", top: "662px", left: "132px" }}>
-        {/* <ServiceCard
+        <ServiceCard
           title="IT Services"
           description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-          icon={<img src="/service-card-images/it-white.png" alt="" />}
-          learnMoreLink="/it-services" 
-        /> */}
+          icon={{
+            default: "/service-card-images/it-purple.png",
+            hover: "/service-card-images/it-white.png",
+          }}
+          learnMoreLink="/it-services"
+        />
         {/* </div> */}
 
         {/* Second card - top right */}
