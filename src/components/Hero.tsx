@@ -2,9 +2,16 @@ export default function Hero() {
   return (
     <div>
       <section
-        className="w-[1512px] h-[742px] absolute top-[1px] left-[-8px]"
+        className="relative w-[1512px] h-[742px] absolute top-[1px] left-[-8px]"
         style={{ backgroundColor: "#31297D" }}
       >
+        <div
+          className="absolute top-[-262.26] left-[291px] w-[1348px] h-[1501.5px]"
+          style={{
+            backgroundImage: "url(/G.png)",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
         <h1
           className="absolute top-[249px] left-[133px] text-white text-[70px]"
           style={{
