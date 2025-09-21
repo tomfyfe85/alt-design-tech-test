@@ -53,6 +53,13 @@ export default function LandingPage() {
           learnMoreLink="/communications"
         />
       </div>
+      <div style={{ position: "absolute", top: "1150px", left: "200px" }}>
+        <img
+          src="/clients-Group64.png"
+          alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
+          style={{ width: "1115px", height: "111px" }}
+        />
+      </div>
     </>
   );
 }
