@@ -5,7 +5,12 @@ export default function LandingPage() {
   return (
     <>
       <Hero />
-      <ServiceCard title="IT" />
+      <ServiceCard
+        title="IT Services"
+        description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+        icon="sd"
+        learnMoreLink="/it-services"
+      />
     </>
   );
 }
