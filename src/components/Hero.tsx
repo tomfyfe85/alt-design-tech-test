@@ -8,7 +8,7 @@ export default function Hero() {
         <div
           className="absolute top-[-262.26] left-[291px] w-[1348px] h-[1501.5px]"
           style={{
-            backgroundImage: "url('/G.png')",
+            backgroundImage: "url('/Geomteric1.png')",
             backgroundRepeat: "no-repeat",
           }}
         />
