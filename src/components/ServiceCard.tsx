@@ -22,12 +22,13 @@ export default function ServiceCard({
         borderRadius: "10px",
       }}
     >
-      <div className="flex justify-center mb-6">
-        {/* <div className="p-4 rounded-lg bg-pink-100 group-hover:bg-white/20 transition-all duration-300">
-        <div className="text-pink-500 group-hover:text-white transition-colors duration-300 w-8 h-8"> */}
-        {icon}
-        {/* </div> */}
-        {/* </div> */}
+      <div className="flex justify-center mb-6 mt-8">
+        <div
+          className="transition-all duration-300"
+          style={{ width: "50.19px", height: "44px" }}
+        >
+          {icon}
+        </div>
       </div>
 
       <h3
