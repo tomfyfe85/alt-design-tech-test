@@ -15,7 +15,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <div
-      className={`absolute bg-white hover:bg-pink-500 text-gray-800 hover:text-white rounded-lg p-6 shadow-lg transition-all duration-300 group`}
+      className={`absolute bg-white hover:bg-[#F4207B]  text-gray-800 hover:text-white rounded-lg p-6 shadow-lg transition-all duration-300 group`}
       style={{
         width: "284px",
         height: "345px",
