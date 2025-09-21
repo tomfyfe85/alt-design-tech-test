@@ -23,11 +23,11 @@ export default function ServiceCard({
       }}
     >
       <div className="flex justify-center mb-6">
-        <div className="p-4 rounded-lg bg-pink-100 group-hover:bg-white/20 transition-all duration-300">
-          <div className="text-pink-500 group-hover:text-white transition-colors duration-300 w-8 h-8">
-            {icon}
-          </div>
-        </div>
+        {/* <div className="p-4 rounded-lg bg-pink-100 group-hover:bg-white/20 transition-all duration-300">
+        <div className="text-pink-500 group-hover:text-white transition-colors duration-300 w-8 h-8"> */}
+        {icon}
+        {/* </div> */}
+        {/* </div> */}
       </div>
 
       <h3
