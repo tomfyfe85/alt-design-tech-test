@@ -8,10 +8,24 @@ export default function Hero() {
         <div
           className="absolute top-[-262.26] left-[291px] w-[1348px] h-[1501.5px]"
           style={{
-            backgroundImage: "url(/G.png)",
+            backgroundImage: "url('/G.png')",
             backgroundRepeat: "no-repeat",
           }}
         />
+
+        <div
+          className="absolute"
+          style={{
+            top: "212px",
+            left: "841px",
+            width: "489.68px",
+            height: "480px",
+            backgroundImage: "url(/lap-top-and-router.png)",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+
         <h1
           className="absolute top-[249px] left-[133px] text-white text-[70px]"
           style={{
