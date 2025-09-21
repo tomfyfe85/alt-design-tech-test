@@ -45,10 +45,10 @@ export default function ServiceCard({
           fontSize: "21px",
           lineHeight: "45px",
           letterSpacing: "0%",
-          width: "115px",
-          height: "45px",
+          width: "244px",
+          height: "px",
           top: "100px",
-          left: "87px",
+          left: "23px",
           textAlign: "center",
         }}
       >
