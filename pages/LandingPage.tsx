@@ -1,5 +1,6 @@
 import Hero from "../src/components/Hero";
 import ServiceCard from "../src/components/ServiceCard";
+import VideoSection from "../src/components/VideoSection";
 
 export default function LandingPage() {
   return (
@@ -59,6 +60,9 @@ export default function LandingPage() {
           alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
           style={{ width: "1115px", height: "111px" }}
         />
+      </div>
+      <div style={{ position: "absolute", top: "1329px", left: "-112px" }}>
+        <VideoSection />
       </div>
     </>
   );
