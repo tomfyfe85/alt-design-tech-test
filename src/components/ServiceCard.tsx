@@ -31,12 +31,13 @@ export default function ServiceCard({
       </div>
 
       <h3
-        className="text-gray-800 group-hover:text-white font-bold text-center mb-6 transition-colors duration-300"
+        className="text-pink-500 group-hover:text-white font-bold text-center mb-6 transition-colors duration-300"
         style={{
-          fontFamily: "Gilroy",
+          fontFamily: "Inter",
           fontWeight: 700,
-          fontSize: "18px",
-          lineHeight: "22px",
+          fontSize: "21px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
         }}
       >
         {title}
