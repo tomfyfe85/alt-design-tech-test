@@ -35,6 +35,21 @@ export default function Hero() {
         >
           IT work easy.
         </h1>
+        <p
+          className="absolute top-[412px] left-[133px] text-white text-[16px]"
+          style={{
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            width: "567px",
+            height: "90px",
+          }}
+        >
+          Recognising your frustrations with your print environment, IT
+          services, document management & communications and finding a solution
+          to overcome them.
+        </p>
       </section>
     </div>
   );
