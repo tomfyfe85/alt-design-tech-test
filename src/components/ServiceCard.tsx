@@ -23,6 +23,7 @@ ServiceCardProps) {
       }}
     >
       {/* <div className="flex justify-center mb-6 mt-8"> */}
+
       <div
         style={{
           position: "absolute",
@@ -37,7 +38,7 @@ ServiceCardProps) {
       {/* </div> */}
 
       <h3
-        className="text-pink-500 group-hover:text-white font-bold text-center mb-6 transition-colors duration-300"
+        className="text-[#F4207B] group-hover:text-white font-bold mb-6 transition-colors duration-300"
         style={{
           position: "absolute",
 
@@ -46,11 +47,11 @@ ServiceCardProps) {
           fontSize: "21px",
           lineHeight: "45px",
           letterSpacing: "0%",
-          //   width: "115px",
+          width: "115px",
           height: "45px",
-
           top: "100px",
           left: "87px",
+          textAlign: "center",
         }}
       >
         {title}
