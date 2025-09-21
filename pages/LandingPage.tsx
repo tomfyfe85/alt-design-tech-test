@@ -30,7 +30,7 @@ export default function LandingPage() {
         />
       </div>
 
-      <div style={{ position: "absolute", top: "1050px", left: "132px" }}>
+      <div style={{ position: "absolute", top: "662px", left: "765px" }}>
         <ServiceCard
           title="Document Management"
           description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
@@ -42,7 +42,7 @@ export default function LandingPage() {
         />
       </div>
 
-      <div style={{ position: "absolute", top: "1050px", left: "450px" }}>
+      <div style={{ position: "absolute", top: "662px", left: "1080px" }}>
         <ServiceCard
           title="Communications"
           description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
