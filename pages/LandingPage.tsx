@@ -7,9 +7,9 @@ export default function LandingPage() {
       <Hero />
       <ServiceCard
         title="IT Services"
-        description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+        // description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
         icon={<img src="/service-card-images/it-white.png" alt="" />}
-        learnMoreLink="/it-services"
+        // learnMoreLink="/it-services"
       />
     </>
   );
