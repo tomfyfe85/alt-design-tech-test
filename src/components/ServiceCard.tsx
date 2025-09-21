@@ -46,9 +46,16 @@ export default function ServiceCard({
       <p
         className="text-gray-700 group-hover:text-white text-center leading-relaxed mb-6 px-4 transition-colors duration-300"
         style={{
-          fontSize: "14px",
-          lineHeight: "20px",
-          opacity: 0.8,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "23px",
+          letterSpacing: "0%",
+          width: "235px",
+          height: "115px",
+          top: "811px",
+          left: "156px",
+          textAlign: "center",
         }}
       >
         {description}
