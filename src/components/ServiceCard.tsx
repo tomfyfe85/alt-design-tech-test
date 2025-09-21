@@ -1,9 +1,10 @@
-import React from "react";
-
 interface ServiceCardProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: {
+    default: string; // purple/default icon path
+    hover: string; // white/hover icon path
+  };
   learnMoreLink: string;
 }
 
@@ -31,7 +32,17 @@ export default function ServiceCard({
           height: "44px",
         }}
       >
-        {icon}
+        <img
+          src={icon.default}
+          alt="service icon"
+          className="absolute inset-0 w-full h-full object-contain group-hover:opacity-0 transition-opacity duration-300"
+        />
+        {/* White icon - hidden by default, visible on hover */}
+        <img
+          src={icon.hover}
+          alt="service icon"
+          className="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        />
       </div>
       {/* </div> */}
 
