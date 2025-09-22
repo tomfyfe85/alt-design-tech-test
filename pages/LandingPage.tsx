@@ -194,7 +194,7 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "2900px",
+          top: "2850px",
           left: "250px",
           width: "1018px",
           height: "296px",
@@ -207,8 +207,8 @@ export default function LandingPage() {
         {/* Title in Inter */}
         <h2
           style={{
-            fontFamily: "Inter, sans-serif",
-            fontSize: "24px",
+            fontFamily: "Inter",
+            fontSize: "35px",
             fontWeight: "bold",
             marginBottom: "16px",
             textAlign: "center",
@@ -229,7 +229,9 @@ export default function LandingPage() {
             >
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
-              solution to overcome them...
+              solution to overcome them... Recognising your frustrations with
+              your print environment, IT services, document management &
+              communications and finding a solution to overcome them...
             </p>
           </div>
           <div style={{ flex: 1 }}>
@@ -242,7 +244,9 @@ export default function LandingPage() {
             >
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
-              solution to overcome them...
+              solution to overcome them... Recognising your frustrations with
+              your print environment, IT services, document management &
+              communications and finding a solution to overcome them...
             </p>
           </div>
         </div>
