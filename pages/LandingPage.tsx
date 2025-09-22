@@ -147,6 +147,33 @@ export default function LandingPage() {
             Don't just take our word for it...
           </h1>
         </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "2036px",
+            left: "1000px",
+            width: "381px",
+            height: "150px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "flex-end",
+          }}
+        >
+          <a
+            href="/case-studies"
+            style={{
+              fontFamily: "IBM Plex Mono",
+              fontWeight: 400,
+              fontSize: "16px",
+              lineHeight: "30px",
+              letterSpacing: "0%",
+              color: "black",
+              textDecoration: "underline",
+            }}
+          >
+            View all Case Studies
+          </a>
+        </div>
         <TestimonialCarousel />
       </section>
     </>
