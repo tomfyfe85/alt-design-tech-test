@@ -297,6 +297,13 @@ export default function LandingPage() {
               textDecoration: "none",
               zIndex: 2,
               cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
             {/* MS Loop Image */}
@@ -368,6 +375,13 @@ export default function LandingPage() {
               textDecoration: "none",
               zIndex: 2,
               cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
             {/* Xerox Image */}
@@ -437,6 +451,13 @@ export default function LandingPage() {
               textDecoration: "none",
               zIndex: 2,
               cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
             {/* MS Loop Small Image */}
