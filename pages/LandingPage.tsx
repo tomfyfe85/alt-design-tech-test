@@ -791,6 +791,256 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      {/* A team of accredited experts title */}
+      <div
+        style={{
+          position: "absolute",
+          width: "968.75390625px",
+          height: "96px",
+          top: "4479px",
+          left: "271.62px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: "40px",
+          lineHeight: "48px",
+          letterSpacing: "0%",
+          textAlign: "center",
+          color: "black",
+        }}
+      >
+        A team of accredited experts<br />that support you
+      </div>
+
+      {/* Business Years Image */}
+      <img
+        src="/accredited-experts/buisness-years.png"
+        alt="Business Years"
+        style={{
+          position: "absolute",
+          width: "92.529296875px",
+          height: "85.70703125px",
+          top: "4632.36px",
+          left: "331.19px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Business Years Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "133px",
+          height: "45px",
+          top: "4732.44px",
+          left: "302.19px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Business years
+      </div>
+
+      {/* On-Site Support Image */}
+      <img
+        src="/accredited-experts/on-site-support.png"
+        alt="On-Site Support"
+        style={{
+          position: "absolute",
+          width: "82.16845703125px",
+          height: "82.16901397705078px",
+          top: "4636.65px",
+          left: "714.92px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Expert Team Members Image */}
+      <img
+        src="/accredited-experts/expert-tem-members.png"
+        alt="Expert Team Members"
+        style={{
+          position: "absolute",
+          width: "104.63494873046875px",
+          height: "99.62627410888672px",
+          top: "4628.3px",
+          left: "1099.15px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Accreditations & Awards Image */}
+      <img
+        src="/accredited-experts/accreditations-&-awards.png"
+        alt="Accreditations & Awards"
+        style={{
+          position: "absolute",
+          width: "98.900390625px",
+          height: "89.2734375px",
+          top: "4870.23px",
+          left: "1104.88px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Guided Training Image */}
+      <img
+        src="/accredited-experts/guided-training.png"
+        alt="Guided Training"
+        style={{
+          position: "absolute",
+          width: "79.66216278076172px",
+          height: "79.662109375px",
+          top: "4881px",
+          left: "716px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Live Contracts Image */}
+      <img
+        src="/accredited-experts/live-contracts.png"
+        alt="Live Contracts"
+        style={{
+          position: "absolute",
+          width: "129.28px",
+          height: "85.71px",
+          top: "4870.23px",
+          left: "328.69px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* On-Site Support Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "148px",
+          height: "45px",
+          top: "4732.44px",
+          left: "682px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        On-Site Support
+      </div>
+
+      {/* Expert Team Members Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "204px",
+          height: "45px",
+          top: "4732.44px",
+          left: "1055.52px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Expert Team Members
+      </div>
+
+      {/* Accreditations & Awards Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "226px",
+          height: "45px",
+          top: "4970.32px",
+          left: "1044.52px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Accreditations & Awards
+      </div>
+
+      {/* Guided Training Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "146px",
+          height: "45px",
+          top: "4970.32px",
+          left: "683px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Guided Training
+      </div>
+
+      {/* Live Contracts Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "129px",
+          height: "45px",
+          top: "4970.32px",
+          left: "303.19px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 600,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Live Contracts
+      </div>
     </>
   );
 }
