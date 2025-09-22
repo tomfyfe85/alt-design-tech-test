@@ -7,7 +7,6 @@ export default function LandingPage() {
   return (
     <>
       <Hero />
-
       <div style={{ position: "absolute", top: "662px", left: "132px" }}>
         <ServiceCard
           title="IT Services"
@@ -251,6 +250,49 @@ export default function LandingPage() {
               communications and finding a solution to overcome them...
             </p>
           </div>
+        </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "3354px",
+          left: "133px",
+          width: "1248px",
+          height: "853px",
+          display: "flex",
+          zIndex: 10,
+        }}
+      >
+        {/* Left side - Insights & News */}
+        <div style={{ width: "50%", padding: "20px" }}>
+          <h2
+            style={{
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            Insights & News
+          </h2>
+          {/* Blog cards */}
+        </div>
+
+        {/* Right side - FAQs */}
+        <div style={{ width: "50%", padding: "20px" }}>
+          <h2
+            style={{
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            FAQ's
+          </h2>
+          {/* FAQ items */}
         </div>
       </div>
     </>
