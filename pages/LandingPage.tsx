@@ -61,9 +61,7 @@ export default function LandingPage() {
           style={{ width: "1115px", height: "111px" }}
         />
       </div>
-      <div style={{ position: "absolute", top: "1329px", left: "-112px" }}>
-        <VideoSection />
-      </div>
+      <VideoSection />
     </>
   );
 }

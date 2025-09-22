@@ -13,13 +13,36 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <video
-      controls
-      width="870"
-      height="651"
-      src="/video/Screen-Recording-2024-08-08.mp4"
+    <div
+      style={{
+        position: "relative",
+        width: "760px",
+        height: "651px",
+        overflow: "hidden",
+
+        // width: "760px",
+        // height: "651px",
+        // overflow: "hidden",
+      }}
     >
-      Your browser doesn't support video.
-    </video>
+      <video
+        ref={videoRef}
+        muted
+        loop
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "90%",
+          height: "90%",
+
+          objectFit: "fill",
+          // This will stretch to fill, distorting aspect ratio
+        }}
+      >
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+    </div>
   );
 }
