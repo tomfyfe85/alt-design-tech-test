@@ -174,6 +174,21 @@ export default function LandingPage() {
             View all Case Studies
           </a>
         </div>
+
+        {/* Black background rectangle */}
+        <div
+          style={{
+            position: "absolute",
+            top: "2408px",
+            left: "0px",
+            width: "1512px",
+            height: "1960px",
+            backgroundColor: "#000000",
+            opacity: 1,
+            zIndex: 1,
+          }}
+        />
+
         <TestimonialCarousel />
       </section>
     </>
