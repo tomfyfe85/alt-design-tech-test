@@ -792,6 +792,28 @@ export default function LandingPage() {
         </div>
       </div>
 
+      {/* A team of accredited experts title */}
+      <div
+        style={{
+          position: "absolute",
+          width: "968.75390625px",
+          height: "96px",
+          top: "4479px",
+          left: "271.62px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: "40px",
+          lineHeight: "48px",
+          letterSpacing: "0%",
+          textAlign: "center",
+          color: "black",
+        }}
+      >
+        A team of accredited experts<br />that support you
+      </div>
+
       {/* Business Years Image */}
       <img
         src="/accredited-experts/buisness-years.png"
