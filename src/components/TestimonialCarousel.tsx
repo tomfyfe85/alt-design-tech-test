@@ -9,7 +9,6 @@ export default function TestimonialCarousel() {
         top: "2146px",
         left: "134px",
         borderRadius: "10px",
-        borderWidth: "1px",
         opacity: 1,
       }}
     >
