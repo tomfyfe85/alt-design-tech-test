@@ -206,6 +206,28 @@ export default function LandingPage() {
             zIndex: 2,
           }}
         />
+
+        {/* Date beneath MS Loop */}
+        <div
+          style={{
+            position: "absolute",
+            width: "96px",
+            height: "30px",
+            top: "3706px",
+            left: "136px",
+            opacity: 1,
+            transform: "rotate(0deg)",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontSize: "16px",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            color: "white",
+            zIndex: 2,
+          }}
+        >
+          15/06/2024
+        </div>
       </section>
       <div
         style={{
