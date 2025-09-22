@@ -224,7 +224,7 @@ export default function LandingPage() {
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
                 fontSize: "14px", // adjust as needed
-                lineHeight: "1.5",
+                lineHeight: "2.5",
               }}
             >
               Recognising your frustrations with your print environment, IT
@@ -239,7 +239,7 @@ export default function LandingPage() {
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
                 fontSize: "14px",
-                lineHeight: "1.5",
+                lineHeight: "2.5",
               }}
             >
               Recognising your frustrations with your print environment, IT
