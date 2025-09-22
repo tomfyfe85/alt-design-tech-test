@@ -1271,8 +1271,44 @@ export default function LandingPage() {
         }}
       >
         <div>Contact us</div>
-        <div>E info@dnslimited.co.uk</div>
-        <div>T 0845 034 0895</div>
+        <div>
+          E{" "}
+          <a
+            href="mailto:info@dnslimited.co.uk"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              transition: "color 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#cccccc";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "white";
+            }}
+          >
+            info@dnslimited.co.uk
+          </a>
+        </div>
+        <div>
+          T{" "}
+          <a
+            href="tel:08450340895"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              transition: "color 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#cccccc";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "white";
+            }}
+          >
+            0845 034 0895
+          </a>
+        </div>
       </div>
 
       {/* Address section */}
