@@ -2,8 +2,8 @@ interface ServiceCardProps {
   title: string;
   description: string;
   icon: {
-    default: string; // purple/default icon path
-    hover: string; // white/hover icon path
+    default: string;
+    hover: string;
   };
   learnMoreLink: string;
 }
