@@ -210,7 +210,7 @@ export default function LandingPage() {
             fontFamily: "Inter",
             fontSize: "35px",
             fontWeight: "bold",
-            marginBottom: "16px",
+            marginBottom: "27px",
             textAlign: "center",
           }}
         >
@@ -224,6 +224,7 @@ export default function LandingPage() {
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
                 fontSize: "14px", // adjust as needed
+                fontWeight: 200,
                 lineHeight: "2.5",
               }}
             >
@@ -239,6 +240,7 @@ export default function LandingPage() {
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
                 fontSize: "14px",
+                fontWeight: 200,
                 lineHeight: "2.5",
               }}
             >
