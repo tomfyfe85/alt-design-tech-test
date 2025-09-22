@@ -15,11 +15,13 @@ export default function TestimonialCarousel() {
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center opacity-100"
         style={{
           backgroundImage: `url('forest-image.jpg')`,
         }}
-      />
+      >
+        <div className="absolute inset-0 bg-black opacity-15" />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-between p-8">
@@ -35,13 +37,21 @@ export default function TestimonialCarousel() {
           >
             <blockquote
               className="text-white font-semibold mb-6 leading-relaxed"
-              style={{ fontFamily: "Inter", fontSize: "33px" }}
+              style={{
+                fontFamily: "Inter",
+                fontSize: "33px",
+              }}
             >
               "We have been delighted with our DNS partnership. The club now has
               direction & delivery on all document processes with a clear road
               map for the foreseeable future. "{" "}
             </blockquote>
-            <div className="text-white" style={{ fontFamily: "IBM Plex Mono" }}>
+            <div
+              className="text-white"
+              style={{
+                fontFamily: "Inter",
+              }}
+            >
               <div className="text-sm font-light">Paul Johnson, Director</div>
               <div className="text-sm font-light">
                 Nottingham Forest Football Club
