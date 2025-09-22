@@ -11,6 +11,7 @@ export default function TestimonialCarousel() {
         borderRadius: "10px",
         borderWidth: "1px",
         opacity: 1,
+        zIndex: 10,
       }}
     >
       {/* Background Image */}
