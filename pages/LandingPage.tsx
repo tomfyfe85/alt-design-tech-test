@@ -189,6 +189,23 @@ export default function LandingPage() {
         />
 
         <TestimonialCarousel />
+
+        {/* MS Loop Image */}
+        <img
+          src="/ms-loop.jpg"
+          alt="MS Loop"
+          style={{
+            position: "absolute",
+            width: "602px",
+            height: "245px",
+            top: "3443px",
+            left: "136px",
+            borderRadius: "10px",
+            opacity: 1,
+            transform: "rotate(0deg)",
+            zIndex: 2,
+          }}
+        />
       </section>
       <div
         style={{
