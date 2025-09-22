@@ -64,6 +64,15 @@ export default function LandingPage() {
       <div style={{ position: "absolute", top: "1329px", left: "-112px" }}>
         <VideoSection />
       </div>
+      <div style={{
+        position: "absolute",
+        top: "1329px",
+        left: "1036px",
+        width: "calc(100vw - 1036px)",
+        height: "552px",
+        backgroundColor: "#C92C93"
+      }}>
+      </div>
     </>
   );
 }
