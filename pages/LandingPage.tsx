@@ -7,7 +7,6 @@ export default function LandingPage() {
   return (
     <>
       <Hero />
-
       <div style={{ position: "absolute", top: "662px", left: "132px" }}>
         <ServiceCard
           title="IT Services"
@@ -191,6 +190,7 @@ export default function LandingPage() {
 
         <TestimonialCarousel />
       </section>
+
       <div
         style={{
           position: "absolute",
@@ -251,6 +251,287 @@ export default function LandingPage() {
               communications and finding a solution to overcome them...
             </p>
           </div>
+        </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: "3354px",
+          left: "133px",
+          width: "1248px",
+          height: "853px",
+          display: "flex",
+          zIndex: 10,
+        }}
+      >
+        {/* Left side - Insights & News */}
+        <div style={{ width: "50%", padding: "20px" }}>
+          <h2
+            style={{
+              position: "absolute",
+              top: "0px",
+              left: "0px",
+              width: "288px",
+              height: "58px",
+              opacity: 1,
+              transform: "rotate(0deg)",
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            Insights & News
+          </h2>
+          {/* MS Loop Clickable Card */}
+          <a
+            href="/blog/microsoft-loop"
+            style={{
+              position: "absolute",
+              top: "89px",
+              left: "3px",
+              width: "602px",
+              height: "328px",
+              display: "block",
+              textDecoration: "none",
+              zIndex: 2,
+              cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
+            }}
+          >
+            {/* MS Loop Image */}
+            <img
+              src="/ms-loop.jpg"
+              alt="MS Loop"
+              style={{
+                width: "602px",
+                height: "245px",
+                borderRadius: "10px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+              }}
+            />
+
+            {/* Date beneath MS Loop */}
+            <div
+              style={{
+                position: "absolute",
+                width: "96px",
+                height: "30px",
+                top: "263px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "IBM Plex Mono",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "30px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              15/06/2024
+            </div>
+
+            {/* MS Loop Title */}
+            <div
+              style={{
+                position: "absolute",
+                width: "589px",
+                height: "33px",
+                top: "295px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: "25px",
+                lineHeight: "33px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              What is Microsoft Loop and how does it work
+            </div>
+          </a>
+
+          {/* Xerox Clickable Card */}
+          <a
+            href="/blog/xerox"
+            style={{
+              position: "absolute",
+              top: "477px",
+              left: "0px",
+              width: "289px",
+              height: "194px",
+              display: "block",
+              textDecoration: "none",
+              zIndex: 2,
+              cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
+            }}
+          >
+            {/* Xerox Image */}
+            <img
+              src="/xerox.jpg"
+              alt="Xerox"
+              style={{
+                width: "289px",
+                height: "194px",
+                borderRadius: "10px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+              }}
+            />
+
+            {/* Date beneath Xerox */}
+            <div
+              style={{
+                position: "absolute",
+                width: "96px",
+                height: "30px",
+                top: "212px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "IBM Plex Mono",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "30px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              15/06/2024
+            </div>
+
+            {/* Xerox Description */}
+            <div
+              style={{
+                position: "absolute",
+                top: "244px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: "25px",
+                lineHeight: "33px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              Boost productivity within your law firm with xerox technology
+            </div>
+          </a>
+
+          {/* MS Loop Small Clickable Card */}
+          <a
+            href="/blog/microsoft-loop-small"
+            style={{
+              position: "absolute",
+              top: "477px",
+              left: "317px",
+              width: "288px",
+              height: "193px",
+              display: "block",
+              textDecoration: "none",
+              zIndex: 2,
+              cursor: "pointer",
+              transition: "transform 0.15s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-10px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0px)";
+            }}
+          >
+            {/* MS Loop Small Image */}
+            <img
+              src="/ms-loop-small.jpg"
+              alt="MS Loop Small"
+              style={{
+                width: "288px",
+                height: "193px",
+                borderRadius: "10px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+              }}
+            />
+
+            {/* Date beneath MS Loop Small */}
+            <div
+              style={{
+                position: "absolute",
+                width: "96px",
+                height: "30px",
+                top: "212px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "IBM Plex Mono",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "30px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              15/06/2024
+            </div>
+
+            {/* MS Loop Small Title */}
+            <div
+              style={{
+                position: "absolute",
+                width: "299px",
+                height: "66px",
+                top: "244px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: "25px",
+                lineHeight: "33px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              What is Microsoft Loop and how does it work
+            </div>
+          </a>
+          {/* Blog cards */}
+        </div>
+
+        {/* Right side - FAQs */}
+        <div style={{ width: "50%", padding: "20px" }}>
+          <h2
+            style={{
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            FAQ's
+          </h2>
+          {/* FAQ items */}
         </div>
       </div>
     </>
