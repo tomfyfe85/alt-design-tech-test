@@ -71,8 +71,24 @@ export default function LandingPage() {
         width: "468px",
         height: "552px",
         backgroundColor: "#C92C93",
-        zIndex: 1
+        zIndex: 1,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "40px"
       }}>
+        <h2 style={{
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: "40px",
+          lineHeight: "46px",
+          letterSpacing: "0%",
+          color: "white",
+          textAlign: "center",
+          margin: 0
+        }}>
+          Turning process frustration into progress since 1996
+        </h2>
       </div>
     </>
   );
