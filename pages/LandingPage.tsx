@@ -1,6 +1,7 @@
 import Hero from "../src/components/Hero";
 import ServiceCard from "../src/components/ServiceCard";
 import VideoSection from "../src/components/VideoSection";
+import TestimonialCarousel from "../src/components/TestimonialCarousel";
 
 export default function LandingPage() {
   return (
@@ -106,6 +107,7 @@ export default function LandingPage() {
           </p>
         </div>
       </div>
+      <TestimonialCarousel />
     </>
   );
 }
