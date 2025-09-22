@@ -34,11 +34,9 @@ export default function TestimonialCarousel() {
               map for the foreseeable future. ”{" "}
             </blockquote>
             <div className="text-white">
-              <div className="font-bold text-lg">
-                Paul Johnson, Director Nottingham Forest Football Club
-              </div>
-              <div className="font-bold text-lg">
-                Director Nottingham Forest Football Club
+              <div className="text-sm font-light">Paul Johnson, Director</div>
+              <div className="text-sm font-light">
+                Nottingham Forest Football Club
               </div>
             </div>
           </div>
