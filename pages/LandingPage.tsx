@@ -68,7 +68,7 @@ export default function LandingPage() {
         position: "absolute",
         top: "1329px",
         left: "1036px",
-        width: "calc(100vw - 1036px)",
+        width: "468px",
         height: "552px",
         backgroundColor: "#C92C93",
         zIndex: 1
