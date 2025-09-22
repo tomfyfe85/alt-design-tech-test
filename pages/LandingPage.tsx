@@ -106,7 +106,7 @@ export default function LandingPage() {
               fontFamily: "IBM Plex Mono",
               fontWeight: 400,
               fontSize: "16px",
-              lineHeight: "30px",
+              lineHeight: "26px",
               letterSpacing: "0%",
               color: "white",
               textAlign: "center",
@@ -164,7 +164,7 @@ export default function LandingPage() {
               fontFamily: "IBM Plex Mono",
               fontWeight: 400,
               fontSize: "16px",
-              lineHeight: "30px",
+              lineHeight: "26px",
               letterSpacing: "0%",
               color: "black",
               textDecoration: "underline",
@@ -239,8 +239,8 @@ export default function LandingPage() {
             <p
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "14px", // adjust as needed
-                fontWeight: 200,
+                fontSize: "12px", // adjust as needed
+                fontWeight: 50,
                 lineHeight: "2.5",
               }}
             >
@@ -255,8 +255,8 @@ export default function LandingPage() {
             <p
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "14px",
-                fontWeight: 200,
+                fontSize: "12px",
+                fontWeight: 50,
                 lineHeight: "2.5",
               }}
             >
@@ -351,7 +351,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "30px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -429,7 +429,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "30px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -505,7 +505,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "30px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -776,7 +776,7 @@ export default function LandingPage() {
                 style={{
                   fontFamily: "IBM Plex Mono",
                   fontSize: "8px",
-                  fontWeight: 200,
+                  fontWeight: 50,
                   color: "white",
                   textDecoration: "none",
                   borderBottom: "1px solid rgba(255, 255, 255, 0.6)",
@@ -1168,6 +1168,239 @@ export default function LandingPage() {
         }}
       >
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Pink background section */}
+      <div
+        style={{
+          position: "absolute",
+          width: "1512px",
+          height: "914px",
+          top: "5173px",
+          left: "0px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          backgroundColor: "#FF3A7A",
+        }}
+      />
+
+      {/* Geometric3 Image */}
+      <img
+        src="/Geometric3.png"
+        alt="Geometric3"
+        style={{
+          position: "absolute",
+          width: "907.09px",
+          height: "781.66px",
+          top: "5307.67px",
+          left: "-17.59px",
+          //   transform: "rotate(0deg)",
+          opacity: 100,
+        }}
+      />
+
+      {/* We're your IT Services problem solvers title */}
+      <div
+        style={{
+          position: "absolute",
+          width: "670px",
+          height: "73px",
+          top: "5265px",
+          left: "147px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: "55px",
+          lineHeight: "100%",
+          letterSpacing: "0%",
+          color: "white",
+        }}
+      >
+        We're{" "}
+        <span
+          style={{
+            color: "transparent",
+            WebkitTextStroke: "1px white",
+          }}
+        >
+          your
+        </span>{" "}
+        IT Services
+        <br />
+        problem solvers
+      </div>
+
+      {/* Description paragraph */}
+      <div
+        style={{
+          position: "absolute",
+          width: "596px",
+          height: "120px",
+          top: "5418px",
+          left: "147px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "16px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          color: "white",
+        }}
+      >
+        Recognising your frustrations with your print environment, IT services,
+        document management & communications and finding.
+        <br />
+        <br />
+        Get in touch today!
+      </div>
+
+      {/* DNS White Logo */}
+      <img
+        src="/DNS-White-Logo-3.png"
+        alt="DNS Logo"
+        style={{
+          position: "absolute",
+          width: "94px",
+          height: "57px",
+          top: "5868px",
+          left: "144px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+        }}
+      />
+
+      {/* Footer Content */}
+      {/* Contact us section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "5858.08px",
+          left: "301px",
+          color: "white",
+          fontFamily: "IBM Plex Mono",
+          fontSize: "12px",
+          lineHeight: "26px",
+          fontWeight: 50,
+        }}
+      >
+        <div>Contact us</div>
+        <div>
+          E{" "}
+          <a
+            href="mailto:info@dnslimited.co.uk"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              transition: "color 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#cccccc";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "white";
+            }}
+          >
+            info@dnslimited.co.uk
+          </a>
+        </div>
+        <div>
+          T{" "}
+          <a
+            href="tel:08450340895"
+            style={{
+              color: "white",
+              textDecoration: "none",
+              transition: "color 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#cccccc";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "white";
+            }}
+          >
+            0845 034 0895
+          </a>
+        </div>
+      </div>
+
+      {/* Address section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "5858.08px",
+          left: "535px",
+          color: "white",
+          fontFamily: "IBM Plex Mono",
+          fontSize: "12px",
+          lineHeight: "22px",
+          fontWeight: 50,
+        }}
+      >
+        <div>Address</div>
+        <div>Unit 5</div>
+        <div>Royal Scot Road,</div>
+        <div>Pride Park, Derby</div>
+        <div>DE24 8AJ</div>
+      </div>
+
+      {/* Opening hours section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "5858.08px",
+          left: "727px",
+          color: "white",
+          fontFamily: "IBM Plex Mono",
+          fontSize: "12px",
+          lineHeight: "22px",
+          fontWeight: 50,
+        }}
+      >
+        <div>Opening hours</div>
+        <div>Mon - Fri:</div>
+        <div>9 am - 5:30 pm</div>
+      </div>
+
+      {/* About us section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "5858.08px",
+          left: "926px",
+          color: "white",
+          fontFamily: "IBM Plex Mono",
+          fontSize: "12px",
+          lineHeight: "22px",
+          fontWeight: 50,
+        }}
+      >
+        <div>About us</div>
+        <div>CSR</div>
+        <div>Environment & Sustainability</div>
+        <div>Meet the team</div>
+      </div>
+
+      {/* Services section */}
+      <div
+        style={{
+          position: "absolute",
+          top: "5858.08px",
+          left: "1181px",
+          color: "white",
+          fontFamily: "IBM Plex Mono",
+          fontSize: "12px",
+          lineHeight: "22px",
+          fontWeight: 100,
+        }}
+      >
+        <div>Services</div>
+        <div>IT Services</div>
+        <div>Communications</div>
+        <div>Managed Print Services</div>
+        <div>Document Management</div>
       </div>
     </>
   );
