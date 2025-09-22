@@ -1239,6 +1239,21 @@ export default function LandingPage() {
         <br />
         Get in touch today!
       </div>
+
+      {/* DNS White Logo */}
+      <img
+        src="/DNS-White-Logo-3.png"
+        alt="DNS Logo"
+        style={{
+          position: "absolute",
+          width: "94px",
+          height: "57px",
+          top: "5868px",
+          left: "144px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+        }}
+      />
     </>
   );
 }
