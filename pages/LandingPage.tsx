@@ -544,6 +544,215 @@ export default function LandingPage() {
             FAQ's
           </h2>
           {/* FAQ items */}
+          <div style={{ marginTop: "68px" }}>
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderTop: "1px solid rgba(255, 255, 255, 0.3)",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>What services does DNS offer?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>How can I get support?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>What are your pricing options?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>Do you offer maintenance services?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>What is your response time for support?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>Do you provide training for staff?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>What industries do you specialize in?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>How do I schedule a consultation?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+
+            <div style={{ marginBottom: "0px" }}>
+              <button
+                style={{
+                  width: "100%",
+                  padding: "19px 0",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                  color: "white",
+                  fontSize: "18px",
+                  fontFamily: "Inter",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <span>What are your service level agreements?</span>
+                <span style={{ fontSize: "24px" }}>+</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
