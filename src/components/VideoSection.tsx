@@ -16,13 +16,15 @@ export default function VideoSection() {
     <div
       style={{
         position: "relative",
-        width: "760px",
-        height: "651px",
+        width: "1058px",
+        height: "552px",
         overflow: "hidden",
-
-        // width: "760px",
-        // height: "651px",
-        // overflow: "hidden",
+        backgroundColor: "#000",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        borderRadius: "10px",
+        marginLeft: "110px",
       }}
     >
       <video
@@ -31,17 +33,12 @@ export default function VideoSection() {
         loop
         playsInline
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "90%",
-          height: "90%",
-
-          objectFit: "fill",
-          // This will stretch to fill, distorting aspect ratio
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
         }}
       >
-        <source src="video.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
       </video>
     </div>
   );
