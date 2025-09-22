@@ -228,6 +228,28 @@ export default function LandingPage() {
         >
           15/06/2024
         </div>
+
+        {/* MS Loop Title */}
+        <div
+          style={{
+            position: "absolute",
+            width: "589px",
+            height: "33px",
+            top: "3738px",
+            left: "136px",
+            opacity: 1,
+            transform: "rotate(0deg)",
+            fontFamily: "Inter",
+            fontWeight: 700,
+            fontSize: "25px",
+            lineHeight: "33px",
+            letterSpacing: "0%",
+            color: "white",
+            zIndex: 2,
+          }}
+        >
+          What is Microsoft Loop and how does it work
+        </div>
       </section>
       <div
         style={{
