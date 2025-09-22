@@ -1183,6 +1183,38 @@ export default function LandingPage() {
           backgroundColor: "#FF3A7A",
         }}
       />
+
+      {/* We're your IT Services problem solvers title */}
+      <div
+        style={{
+          position: "absolute",
+          width: "670px",
+          height: "73px",
+          top: "5265px",
+          left: "147px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 700,
+          fontSize: "55px",
+          lineHeight: "100%",
+          letterSpacing: "0%",
+          color: "white",
+        }}
+      >
+        We're{" "}
+        <span
+          style={{
+            color: "transparent",
+            WebkitTextStroke: "1px white",
+          }}
+        >
+          your
+        </span>{" "}
+        IT Services
+        <br />
+        problem solvers
+      </div>
     </>
   );
 }
