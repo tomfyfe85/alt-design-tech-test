@@ -191,6 +191,68 @@ export default function LandingPage() {
 
         <TestimonialCarousel />
       </section>
+      <div
+        style={{
+          position: "absolute",
+          top: "2850px",
+          left: "250px",
+          width: "1018px",
+          height: "296px",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          padding: "20px",
+          color: "white",
+          zIndex: 2,
+        }}
+      >
+        {/* Title in Inter */}
+        <h2
+          style={{
+            fontFamily: "Inter",
+            fontSize: "35px",
+            fontWeight: "bold",
+            marginBottom: "27px",
+            textAlign: "center",
+          }}
+        >
+          The business process problem solvers.
+        </h2>
+
+        {/* Body text in IBM Plex Mono */}
+        <div style={{ display: "flex", gap: "20px" }}>
+          <div style={{ flex: 1 }}>
+            <p
+              style={{
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px", // adjust as needed
+                fontWeight: 200,
+                lineHeight: "2.5",
+              }}
+            >
+              Recognising your frustrations with your print environment, IT
+              services, document management & communications and finding a
+              solution to overcome them... Recognising your frustrations with
+              your print environment, IT services, document management &
+              communications and finding a solution to overcome them...
+            </p>
+          </div>
+          <div style={{ flex: 1 }}>
+            <p
+              style={{
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px",
+                fontWeight: 200,
+                lineHeight: "2.5",
+              }}
+            >
+              Recognising your frustrations with your print environment, IT
+              services, document management & communications and finding a
+              solution to overcome them... Recognising your frustrations with
+              your print environment, IT services, document management &
+              communications and finding a solution to overcome them...
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
