@@ -811,7 +811,9 @@ export default function LandingPage() {
           color: "black",
         }}
       >
-        A team of accredited experts<br />that support you
+        A team of accredited experts
+        <br />
+        that support you
       </div>
 
       {/* Business Years Image */}
@@ -837,7 +839,7 @@ export default function LandingPage() {
           width: "133px",
           height: "45px",
           top: "4732.44px",
-          left: "302.19px",
+          left: "303.19px",
           transform: "rotate(0deg)",
           opacity: 1,
           fontFamily: "Inter",
@@ -922,8 +924,8 @@ export default function LandingPage() {
         alt="Live Contracts"
         style={{
           position: "absolute",
-          width: "129.28px",
-          height: "85.71px",
+          width: "129.81298828125px",
+          height: "85.707275390625px",
           top: "4870.23px",
           left: "328.69px",
           transform: "rotate(0deg)",
@@ -1040,6 +1042,132 @@ export default function LandingPage() {
         }}
       >
         Live Contracts
+      </div>
+
+      {/* Lorem ipsum content */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "4772.44px",
+          left: "228.69px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Lorem ipsum content - second instance */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "4772.44px",
+          left: "618.5px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Lorem ipsum content - third instance */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "4772.44px",
+          left: "1020.02px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Lorem ipsum content - fourth instance */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "5010.32px",
+          left: "228.69px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Lorem ipsum content - fifth instance */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "5010.32px",
+          left: "618.5px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
+      </div>
+
+      {/* Lorem ipsum content - sixth instance */}
+      <div
+        style={{
+          position: "absolute",
+          width: "275px",
+          height: "52px",
+          top: "5010.32px",
+          left: "1020.02px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "12px",
+          lineHeight: "26px",
+          letterSpacing: "0%",
+          textAlign: "center",
+        }}
+      >
+        Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
     </>
   );
