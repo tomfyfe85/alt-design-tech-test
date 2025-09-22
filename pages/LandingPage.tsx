@@ -791,6 +791,22 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      {/* Business Years Image */}
+      <img
+        src="/accredited-experts/buisness-years.png"
+        alt="Business Years"
+        style={{
+          position: "absolute",
+          width: "92.529296875px",
+          height: "85.70703125px",
+          top: "4632.36px",
+          left: "331.19px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
     </>
   );
 }
