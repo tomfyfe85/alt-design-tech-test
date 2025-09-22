@@ -1215,6 +1215,30 @@ export default function LandingPage() {
         <br />
         problem solvers
       </div>
+
+      {/* Description paragraph */}
+      <div
+        style={{
+          position: "absolute",
+          width: "596px",
+          height: "120px",
+          top: "5418px",
+          left: "147px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "IBM Plex Mono",
+          fontWeight: 400,
+          fontSize: "16px",
+          lineHeight: "30px",
+          letterSpacing: "0%",
+          color: "white",
+        }}
+      >
+        Recognising your frustrations with your print environment, IT services, document management & communications and finding.
+        <br />
+        <br />
+        Get in touch today!
+      </div>
     </>
   );
 }
