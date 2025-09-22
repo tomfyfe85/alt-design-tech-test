@@ -191,6 +191,62 @@ export default function LandingPage() {
 
         <TestimonialCarousel />
       </section>
+      <div
+        style={{
+          position: "absolute",
+          top: "2900px",
+          left: "250px",
+          width: "1018px",
+          height: "296px",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          padding: "20px",
+          color: "white",
+          zIndex: 2,
+        }}
+      >
+        {/* Title in Inter */}
+        <h2
+          style={{
+            fontFamily: "Inter, sans-serif",
+            fontSize: "24px",
+            fontWeight: "bold",
+            marginBottom: "16px",
+            textAlign: "center",
+          }}
+        >
+          The business process problem solvers.
+        </h2>
+
+        {/* Body text in IBM Plex Mono */}
+        <div style={{ display: "flex", gap: "20px" }}>
+          <div style={{ flex: 1 }}>
+            <p
+              style={{
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px", // adjust as needed
+                lineHeight: "1.5",
+              }}
+            >
+              Recognising your frustrations with your print environment, IT
+              services, document management & communications and finding a
+              solution to overcome them...
+            </p>
+          </div>
+          <div style={{ flex: 1 }}>
+            <p
+              style={{
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px",
+                lineHeight: "1.5",
+              }}
+            >
+              Recognising your frustrations with your print environment, IT
+              services, document management & communications and finding a
+              solution to overcome them...
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
