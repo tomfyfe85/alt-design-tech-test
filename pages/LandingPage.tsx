@@ -1234,7 +1234,8 @@ export default function LandingPage() {
           color: "white",
         }}
       >
-        Recognising your frustrations with your print environment, IT services, document management & communications and finding.
+        Recognising your frustrations with your print environment, IT services,
+        document management & communications and finding.
         <br />
         <br />
         Get in touch today!
@@ -1269,9 +1270,9 @@ export default function LandingPage() {
           fontWeight: 50,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "0px" }}>Contact us</div>
-        <div>E  info@dnslimited.co.uk</div>
-        <div>T  0845 034 0895</div>
+        <div>Contact us</div>
+        <div>E info@dnslimited.co.uk</div>
+        <div>T 0845 034 0895</div>
       </div>
 
       {/* Address section */}
@@ -1283,11 +1284,11 @@ export default function LandingPage() {
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "26px",
+          lineHeight: "22px",
           fontWeight: 50,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "10px" }}>Address</div>
+        <div>Address</div>
         <div>Unit 5</div>
         <div>Royal Scot Road,</div>
         <div>Pride Park, Derby</div>
@@ -1303,11 +1304,11 @@ export default function LandingPage() {
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "26px",
+          lineHeight: "22px",
           fontWeight: 50,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "10px" }}>Opening hours</div>
+        <div>Opening hours</div>
         <div>Mon - Fri:</div>
         <div>9 am - 5:30 pm</div>
       </div>
@@ -1321,11 +1322,11 @@ export default function LandingPage() {
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "26px",
+          lineHeight: "22px",
           fontWeight: 50,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "10px" }}>About us</div>
+        <div>About us</div>
         <div>CSR</div>
         <div>Environment & Sustainability</div>
         <div>Meet the team</div>
@@ -1340,11 +1341,11 @@ export default function LandingPage() {
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "26px",
-          fontWeight: 50,
+          lineHeight: "22px",
+          fontWeight: 100,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "10px" }}>Services</div>
+        <div>Services</div>
         <div>IT Services</div>
         <div>Communications</div>
         <div>Managed Print Services</div>
