@@ -829,6 +829,86 @@ export default function LandingPage() {
       >
         Business years
       </div>
+
+      {/* On-Site Support Image */}
+      <img
+        src="/accredited-experts/on-site-support.png"
+        alt="On-Site Support"
+        style={{
+          position: "absolute",
+          width: "82.16845703125px",
+          height: "82.16901397705078px",
+          top: "4636.65px",
+          left: "714.92px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Expert Team Members Image */}
+      <img
+        src="/accredited-experts/expert-tem-members.png"
+        alt="Expert Team Members"
+        style={{
+          position: "absolute",
+          width: "104.63494873046875px",
+          height: "99.62627410888672px",
+          top: "4628.3px",
+          left: "1099.15px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Accreditations & Awards Image */}
+      <img
+        src="/accredited-experts/accreditations-&-awards.png"
+        alt="Accreditations & Awards"
+        style={{
+          position: "absolute",
+          width: "98.900390625px",
+          height: "89.2734375px",
+          top: "4870.23px",
+          left: "1104.88px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Guided Training Image */}
+      <img
+        src="/accredited-experts/guided-training.png"
+        alt="Guided Training"
+        style={{
+          position: "absolute",
+          width: "79.66216278076172px",
+          height: "79.662109375px",
+          top: "4881px",
+          left: "716px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
+
+      {/* Live Contracts Image */}
+      <img
+        src="/accredited-experts/live-contracts.png"
+        alt="Live Contracts"
+        style={{
+          position: "absolute",
+          width: "129.28px",
+          height: "85.71px",
+          top: "4870.23px",
+          left: "328.69px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          zIndex: 2,
+        }}
+      />
     </>
   );
 }
