@@ -61,7 +61,7 @@ export default function LandingPage() {
           style={{ width: "1115px", height: "111px" }}
         />
       </div>
-      <div style={{ position: "absolute", top: "1329px", left: "-112px" }}>
+      <div style={{ position: "absolute", top: "1329px", left: "-112px", zIndex: 2 }}>
         <VideoSection />
       </div>
       <div style={{
@@ -70,7 +70,8 @@ export default function LandingPage() {
         left: "1036px",
         width: "calc(100vw - 1036px)",
         height: "552px",
-        backgroundColor: "#C92C93"
+        backgroundColor: "#C92C93",
+        zIndex: 1
       }}>
       </div>
     </>
