@@ -26,7 +26,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
   return (
     <nav
-      className={`absolute top-0 left-0 right-0 z-20 text-white w-[1512px] mx-auto ${backGroundClass}`}
+      className={`absolute top-0 left-0 z-20 text-white w-[1512px] ${backGroundClass}`}
     >
       <div className={`py-2 h-[120px] ${borderClass}`}>
         <img
