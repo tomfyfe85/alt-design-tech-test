@@ -9,6 +9,7 @@ export default function TestimonialCarousel() {
         top: "2146px",
         left: "134px",
         borderRadius: "10px",
+        borderWidth: "1px",
         opacity: 1,
       }}
     >
@@ -35,7 +36,7 @@ export default function TestimonialCarousel() {
             }}
           >
             <blockquote
-              className="text-white font-semibold mb-6 leading-relaxed"
+              className="text-white font-semibold mb-6 leading-tight"
               style={{
                 fontFamily: "Inter",
                 fontSize: "33px",
@@ -43,7 +44,7 @@ export default function TestimonialCarousel() {
             >
               "We have been delighted with our DNS partnership. The club now has
               direction & delivery on all document processes with a clear road
-              map for the foreseeable future. "{" "}
+              map for the foreseeable future."{" "}
             </blockquote>
             <div
               className="text-white"
@@ -51,8 +52,16 @@ export default function TestimonialCarousel() {
                 fontFamily: "Inter",
               }}
             >
-              <div className="text-sm font-light">Paul Johnson, Director</div>
-              <div className="text-sm font-light">
+              <div
+                className="text-sm font-light"
+                style={{ fontFamily: "IBM Plex Mono" }}
+              >
+                Paul Johnson, Director
+              </div>
+              <div
+                className="text-sm font-light"
+                style={{ fontFamily: "IBM Plex Mono" }}
+              >
                 Nottingham Forest Football Club
               </div>
             </div>
