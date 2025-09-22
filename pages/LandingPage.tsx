@@ -284,6 +284,13 @@ export default function LandingPage() {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
+              position: "absolute",
+              top: "0px",
+              left: "0px",
+              width: "288px",
+              height: "58px",
+              opacity: 1,
+              transform: "rotate(0deg)",
               color: "white",
               fontFamily: "Inter",
               fontSize: "32px",
