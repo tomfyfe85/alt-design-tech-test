@@ -61,8 +61,50 @@ export default function LandingPage() {
           style={{ width: "1115px", height: "111px" }}
         />
       </div>
-      <div style={{ position: "absolute", top: "1329px", left: "-112px" }}>
+      <div style={{ position: "absolute", top: "1329px", left: "-112px", zIndex: 2 }}>
         <VideoSection />
+      </div>
+      <div style={{
+        position: "absolute",
+        top: "1329px",
+        left: "1036px",
+        width: "468px",
+        height: "552px",
+        backgroundColor: "#C92C93",
+        zIndex: 1,
+        display: "flex",
+        alignItems: "flex-start",
+        justifyContent: "center",
+        padding: "30px 40px 40px 40px"
+      }}>
+        <div>
+          <h2 style={{
+            fontFamily: "Inter",
+            fontWeight: 700,
+            fontSize: "40px",
+            lineHeight: "46px",
+            letterSpacing: "0%",
+            color: "white",
+            textAlign: "center",
+            margin: "0 0 20px 0"
+          }}>
+            Turning process frustration into progress since 1996
+          </h2>
+          <p style={{
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontSize: "16px",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            color: "white",
+            textAlign: "center",
+            margin: 0,
+            paddingLeft: "20px",
+            paddingRight: "20px"
+          }}>
+            Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them. Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.
+          </p>
+        </div>
       </div>
     </>
   );
