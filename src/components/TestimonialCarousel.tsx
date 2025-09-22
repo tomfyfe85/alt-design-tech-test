@@ -21,9 +21,6 @@ export default function TestimonialCarousel() {
         }}
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-30" />
-
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-between p-8">
         <div className="flex-1 flex items-center">
