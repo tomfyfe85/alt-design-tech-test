@@ -106,7 +106,7 @@ export default function LandingPage() {
               fontFamily: "IBM Plex Mono",
               fontWeight: 400,
               fontSize: "16px",
-              lineHeight: "23.16px",
+              lineHeight: "26px",
               letterSpacing: "0%",
               color: "white",
               textAlign: "center",
@@ -164,7 +164,7 @@ export default function LandingPage() {
               fontFamily: "IBM Plex Mono",
               fontWeight: 400,
               fontSize: "16px",
-              lineHeight: "23.16px",
+              lineHeight: "26px",
               letterSpacing: "0%",
               color: "black",
               textDecoration: "underline",
@@ -351,7 +351,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "23.16px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -429,7 +429,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "23.16px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -505,7 +505,7 @@ export default function LandingPage() {
                 fontFamily: "IBM Plex Mono",
                 fontWeight: 400,
                 fontSize: "16px",
-                lineHeight: "23.16px",
+                lineHeight: "26px",
                 letterSpacing: "0%",
                 color: "white",
               }}
@@ -1229,7 +1229,7 @@ export default function LandingPage() {
           fontFamily: "IBM Plex Mono",
           fontWeight: 400,
           fontSize: "16px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           letterSpacing: "0%",
           color: "white",
         }}
@@ -1260,16 +1260,16 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "5868px",
+          top: "5858.08px",
           left: "301px",
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           fontWeight: 50,
         }}
       >
-        <div style={{ fontWeight: 300, marginBottom: "10px" }}>Contact us</div>
+        <div style={{ fontWeight: 300, marginBottom: "0px" }}>Contact us</div>
         <div>E  info@dnslimited.co.uk</div>
         <div>T  0845 034 0895</div>
       </div>
@@ -1278,12 +1278,12 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "5868px",
+          top: "5858.08px",
           left: "535px",
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           fontWeight: 50,
         }}
       >
@@ -1298,12 +1298,12 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "5868px",
+          top: "5858.08px",
           left: "727px",
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           fontWeight: 50,
         }}
       >
@@ -1316,12 +1316,12 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "5868px",
+          top: "5858.08px",
           left: "926px",
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           fontWeight: 50,
         }}
       >
@@ -1335,12 +1335,12 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          top: "5868px",
+          top: "5858.08px",
           left: "1181px",
           color: "white",
           fontFamily: "IBM Plex Mono",
           fontSize: "12px",
-          lineHeight: "23.16px",
+          lineHeight: "26px",
           fontWeight: 50,
         }}
       >
