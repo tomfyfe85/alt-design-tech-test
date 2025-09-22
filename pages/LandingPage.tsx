@@ -271,15 +271,18 @@ export default function LandingPage() {
               position: "absolute",
               top: "0px",
               left: "0px",
-              width: "288px",
+              width: "400px",
               height: "58px",
               opacity: 1,
               transform: "rotate(0deg)",
               color: "white",
               fontFamily: "Inter",
-              fontSize: "32px",
-              fontWeight: "bold",
+              fontSize: "40px",
+              fontWeight: 700,
+              lineHeight: "58px",
+              letterSpacing: "0%",
               marginBottom: "20px",
+              whiteSpace: "nowrap",
             }}
           >
             Insights & News
@@ -522,10 +525,19 @@ export default function LandingPage() {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
+              position: "absolute",
+              width: "104px",
+              height: "58px",
+              top: "0px",
+              left: "642px",
+              opacity: 1,
+              transform: "rotate(0deg)",
               color: "white",
               fontFamily: "Inter",
-              fontSize: "32px",
-              fontWeight: "bold",
+              fontSize: "40px",
+              fontWeight: 700,
+              lineHeight: "58px",
+              letterSpacing: "0%",
               marginBottom: "20px",
             }}
           >
