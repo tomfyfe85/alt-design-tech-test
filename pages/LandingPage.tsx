@@ -354,6 +354,35 @@ export default function LandingPage() {
               What is Microsoft Loop and how does it work
             </div>
           </a>
+
+          {/* Xerox Clickable Card */}
+          <a
+            href="/blog/xerox"
+            style={{
+              position: "absolute",
+              top: "477px",
+              left: "0px",
+              width: "289px",
+              height: "194px",
+              display: "block",
+              textDecoration: "none",
+              zIndex: 2,
+              cursor: "pointer",
+            }}
+          >
+            {/* Xerox Image */}
+            <img
+              src="/xerox.jpg"
+              alt="Xerox"
+              style={{
+                width: "289px",
+                height: "194px",
+                borderRadius: "10px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+              }}
+            />
+          </a>
           {/* Blog cards */}
         </div>
 
