@@ -1184,6 +1184,21 @@ export default function LandingPage() {
         }}
       />
 
+      {/* Geometric3 Image */}
+      <img
+        src="/Geometric3.png"
+        alt="Geometric3"
+        style={{
+          position: "absolute",
+          width: "907.09px",
+          height: "781.66px",
+          top: "5307.67px",
+          left: "-17.59px",
+          //   transform: "rotate(0deg)",
+          opacity: 100,
+        }}
+      />
+
       {/* We're your IT Services problem solvers title */}
       <div
         style={{
