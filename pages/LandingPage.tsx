@@ -909,6 +909,116 @@ export default function LandingPage() {
           zIndex: 2,
         }}
       />
+
+      {/* On-Site Support Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "148px",
+          height: "45px",
+          top: "4732.44px",
+          left: "682px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        On-Site Support
+      </div>
+
+      {/* Expert Team Members Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "200px",
+          height: "45px",
+          top: "4748px",
+          left: "1040px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Expert Team Members
+      </div>
+
+      {/* Accreditations & Awards Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "200px",
+          height: "45px",
+          top: "4979px",
+          left: "1040px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Accreditations & Awards
+      </div>
+
+      {/* Guided Training Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "150px",
+          height: "45px",
+          top: "4980px",
+          left: "680px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Guided Training
+      </div>
+
+      {/* Live Contracts Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "150px",
+          height: "45px",
+          top: "4975px",
+          left: "300px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Live Contracts
+      </div>
     </>
   );
 }
