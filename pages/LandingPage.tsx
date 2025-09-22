@@ -1002,10 +1002,10 @@ export default function LandingPage() {
       <div
         style={{
           position: "absolute",
-          width: "150px",
+          width: "129px",
           height: "45px",
-          top: "4975px",
-          left: "300px",
+          top: "4970.32px",
+          left: "303.19px",
           transform: "rotate(0deg)",
           opacity: 1,
           fontFamily: "Inter",
