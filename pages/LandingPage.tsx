@@ -752,6 +752,26 @@ export default function LandingPage() {
                 <span style={{ fontSize: "24px" }}>+</span>
               </button>
             </div>
+
+            {/* View all FAQs link */}
+            <div style={{ marginTop: "9px", textAlign: "left" }}>
+              <a
+                href="/faqs"
+                style={{
+                  fontFamily: "IBM Plex Mono",
+                  fontSize: "8px",
+                  fontWeight: 200,
+                  color: "white",
+                  textDecoration: "none",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.6)",
+                  paddingBottom: "0px",
+                  marginBottom: "-8px",
+                  cursor: "pointer",
+                }}
+              >
+                View all FAQs
+              </a>
+            </div>
           </div>
         </div>
       </div>
