@@ -423,6 +423,35 @@ export default function LandingPage() {
               Boost productivity within your law firm with xerox technology
             </div>
           </a>
+
+          {/* MS Loop Small Clickable Card */}
+          <a
+            href="/blog/microsoft-loop-small"
+            style={{
+              position: "absolute",
+              top: "477px",
+              left: "317px",
+              width: "288px",
+              height: "193px",
+              display: "block",
+              textDecoration: "none",
+              zIndex: 2,
+              cursor: "pointer",
+            }}
+          >
+            {/* MS Loop Small Image */}
+            <img
+              src="/ms-loop-small.jpg"
+              alt="MS Loop Small"
+              style={{
+                width: "288px",
+                height: "193px",
+                borderRadius: "10px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+              }}
+            />
+          </a>
           {/* Blog cards */}
         </div>
 
