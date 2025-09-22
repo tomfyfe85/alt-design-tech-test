@@ -193,26 +193,26 @@ export default function LandingPage() {
 
       <div
         style={{
-            position: "absolute",
-            top: "2850px",
-            left: "250px",
-            width: "1018px",
-            height: "296px",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-            padding: "20px",
-            color: "white",
-            zIndex: 2,
+          position: "absolute",
+          top: "2850px",
+          left: "250px",
+          width: "1018px",
+          height: "296px",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          padding: "20px",
+          color: "white",
+          zIndex: 2,
         }}
       >
         {/* Title in Inter */}
         <h2
           style={{
-              fontFamily: "Inter",
-              fontSize: "35px",
-              fontWeight: "bold",
-              marginBottom: "27px",
-              textAlign: "center",
-            }}
+            fontFamily: "Inter",
+            fontSize: "35px",
+            fontWeight: "bold",
+            marginBottom: "27px",
+            textAlign: "center",
+          }}
         >
           The business process problem solvers.
         </h2>
@@ -222,11 +222,11 @@ export default function LandingPage() {
           <div style={{ flex: 1 }}>
             <p
               style={{
-                  fontFamily: "IBM Plex Mono, monospace",
-                  fontSize: "14px", // adjust as needed
-                  fontWeight: 200,
-                  lineHeight: "2.5",
-                }}
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px", // adjust as needed
+                fontWeight: 200,
+                lineHeight: "2.5",
+              }}
             >
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
@@ -238,11 +238,11 @@ export default function LandingPage() {
           <div style={{ flex: 1 }}>
             <p
               style={{
-                  fontFamily: "IBM Plex Mono, monospace",
-                  fontSize: "14px",
-                  fontWeight: 200,
-                  lineHeight: "2.5",
-                }}
+                fontFamily: "IBM Plex Mono, monospace",
+                fontSize: "14px",
+                fontWeight: 200,
+                lineHeight: "2.5",
+              }}
             >
               Recognising your frustrations with your print environment, IT
               services, document management & communications and finding a
@@ -255,31 +255,31 @@ export default function LandingPage() {
       </div>
       <div
         style={{
-            position: "absolute",
-            top: "3354px",
-            left: "133px",
-            width: "1248px",
-            height: "853px",
-            display: "flex",
-            zIndex: 10,
+          position: "absolute",
+          top: "3354px",
+          left: "133px",
+          width: "1248px",
+          height: "853px",
+          display: "flex",
+          zIndex: 10,
         }}
       >
         {/* Left side - Insights & News */}
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
-                position: "absolute",
-                top: "0px",
-                left: "0px",
-                width: "288px",
-                height: "58px",
-                opacity: 1,
-                transform: "rotate(0deg)",
-                color: "white",
-                fontFamily: "Inter",
-                fontSize: "32px",
-                fontWeight: "bold",
-                marginBottom: "20px",
+              position: "absolute",
+              top: "0px",
+              left: "0px",
+              width: "288px",
+              height: "58px",
+              opacity: 1,
+              transform: "rotate(0deg)",
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
             }}
           >
             Insights & News
@@ -451,6 +451,48 @@ export default function LandingPage() {
                 transform: "rotate(0deg)",
               }}
             />
+
+            {/* Date beneath MS Loop Small */}
+            <div
+              style={{
+                position: "absolute",
+                width: "96px",
+                height: "30px",
+                top: "212px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "IBM Plex Mono",
+                fontWeight: 400,
+                fontSize: "16px",
+                lineHeight: "30px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              15/06/2024
+            </div>
+
+            {/* MS Loop Small Title */}
+            <div
+              style={{
+                position: "absolute",
+                width: "299px",
+                height: "66px",
+                top: "244px",
+                left: "0px",
+                opacity: 1,
+                transform: "rotate(0deg)",
+                fontFamily: "Inter",
+                fontWeight: 700,
+                fontSize: "25px",
+                lineHeight: "33px",
+                letterSpacing: "0%",
+                color: "white",
+              }}
+            >
+              What is Microsoft Loop and how does it work
+            </div>
           </a>
           {/* Blog cards */}
         </div>
@@ -459,11 +501,11 @@ export default function LandingPage() {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
-                color: "white",
-                fontFamily: "Inter",
-                fontSize: "32px",
-                fontWeight: "bold",
-                marginBottom: "20px",
+              color: "white",
+              fontFamily: "Inter",
+              fontSize: "32px",
+              fontWeight: "bold",
+              marginBottom: "20px",
             }}
           >
             FAQ's
