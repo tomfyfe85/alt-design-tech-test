@@ -188,6 +188,22 @@ export default function LandingPage() {
           }}
         />
 
+        {/* Geometric2 Image */}
+        <img
+          src="/Geometric2.png"
+          alt="Geometric2"
+          style={{
+            position: "absolute",
+            width: "1348px",
+            height: "1501.497802734375px",
+            top: "2145.74px",
+            left: "291px",
+            transform: "rotate(0deg)",
+            opacity: 150,
+            zIndex: 5,
+          }}
+        />
+
         <TestimonialCarousel />
       </section>
 
