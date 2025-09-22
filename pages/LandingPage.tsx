@@ -1169,6 +1169,20 @@ export default function LandingPage() {
       >
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
+
+      {/* Pink background section */}
+      <div
+        style={{
+          position: "absolute",
+          width: "1512px",
+          height: "914px",
+          top: "5173px",
+          left: "0px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          backgroundColor: "#FF3A7A",
+        }}
+      />
     </>
   );
 }
