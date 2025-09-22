@@ -807,6 +807,28 @@ export default function LandingPage() {
           zIndex: 2,
         }}
       />
+
+      {/* Business Years Text */}
+      <div
+        style={{
+          position: "absolute",
+          width: "133px",
+          height: "45px",
+          top: "4732.44px",
+          left: "302.19px",
+          transform: "rotate(0deg)",
+          opacity: 1,
+          fontFamily: "Inter",
+          fontWeight: 500,
+          fontSize: "20px",
+          lineHeight: "45px",
+          letterSpacing: "0%",
+          color: "black",
+          whiteSpace: "nowrap",
+        }}
+      >
+        Business years
+      </div>
     </>
   );
 }
