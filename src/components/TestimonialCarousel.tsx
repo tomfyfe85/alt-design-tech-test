@@ -101,11 +101,11 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
               key={index}
               onClick={() => setCurrentSlide(index)}
               style={{
-                width: "12px",
-                height: "12px",
+                width: "21px",
+                height: "21px",
                 borderRadius: "50%",
                 border: "none",
-                backgroundColor: currentSlide === index ? "white" : "rgba(255, 255, 255, 0.5)",
+                backgroundColor: currentSlide === index ? "#FFFFFF" : "rgba(255, 255, 255, 0.5)",
                 cursor: "pointer",
                 transition: "background-color 0.3s ease",
               }}
