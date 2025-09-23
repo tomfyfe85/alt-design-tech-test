@@ -1,11 +1,78 @@
+import { useState } from "react";
 import Hero from "../src/components/Hero";
 import ServiceCard from "../src/components/ServiceCard";
 import VideoSection from "../src/components/VideoSection";
 import TestimonialCarousel from "../src/components/TestimonialCarousel";
+import Toast from "../src/components/Toast";
+
+interface FormData {
+  name: string;
+  email: string;
+  telephone: string;
+  company: string;
+  message: string;
+}
 
 export default function LandingPage() {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    telephone: "",
+    company: "",
+    message: "",
+  });
+
+  const [submittedData, setSubmittedData] = useState<FormData | null>(null);
+  const [toast, setToast] = useState<{
+    message: string;
+    type: "success" | "warning";
+  } | null>(null);
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (submittedData) {
+      setToast({
+        message: "Details already entered!",
+        type: "warning",
+      });
+    } else {
+      setSubmittedData(formData);
+      setFormData({
+        name: '',
+        email: '',
+        telephone: '',
+        company: '',
+        message: ''
+      });
+      setToast({
+        message: "Form submitted successfully!",
+        type: "success",
+      });
+    }
+
+    setTimeout(() => setToast(null), 3000);
+  };
+
+  const isFormValid =
+    formData.name &&
+    formData.email &&
+    formData.telephone &&
+    formData.company &&
+    formData.message;
   return (
     <>
+      {toast && <Toast message={toast.message} type={toast.type} />}
       <Hero />
       <div style={{ position: "absolute", top: "662px", left: "132px" }}>
         <ServiceCard
@@ -1254,6 +1321,220 @@ export default function LandingPage() {
         <br />
         <br />
         Get in touch today!
+      </div>
+
+      {/* Contact Form */}
+      <style>
+        {`
+          input::placeholder, textarea::placeholder {
+            color: white !important;
+            opacity: 0.7 !important;
+          }
+          input:focus, textarea:focus {
+            background-color: transparent !important;
+            color: white !important;
+          }
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+            -webkit-text-fill-color: white !important;
+            background-color: transparent !important;
+            background: transparent !important;
+            color: white !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+          }
+          input[type="text"], input[type="email"], input[type="tel"], textarea {
+            background-color: transparent !important;
+            color: white !important;
+          }
+        `}
+      </style>
+      <div
+        style={{
+          position: "absolute",
+          top: "5287px",
+          left: "849px",
+          zIndex: 10,
+        }}
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleInputChange}
+          required
+          style={{
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "0px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
+          }}
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={handleInputChange}
+          required
+          style={{
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "92px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
+          }}
+        />
+
+        <input
+          type="tel"
+          name="telephone"
+          placeholder="Telephone"
+          value={formData.telephone}
+          onChange={handleInputChange}
+          required
+          style={{
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "184px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
+          }}
+        />
+
+        <input
+          type="text"
+          name="company"
+          placeholder="Company"
+          value={formData.company}
+          onChange={handleInputChange}
+          required
+          style={{
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "276px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
+          }}
+        />
+
+        <textarea
+          name="message"
+          placeholder="I need help with..."
+          value={formData.message}
+          onChange={handleInputChange}
+          required
+          style={{
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "368px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "15px 20px",
+            opacity: 1,
+            resize: "none",
+          }}
+        />
+
+        <button
+          type="submit"
+          onClick={handleSubmit}
+          disabled={!isFormValid}
+          style={{
+            position: "absolute",
+            width: "200px",
+            height: "55px",
+            top: "450px",
+            left: "288px",
+            backgroundColor: "#FFFFFF",
+            color: "#C92C93",
+            border: "none",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            cursor: isFormValid ? "pointer" : "not-allowed",
+            borderRadius: "0px",
+            opacity: isFormValid ? 1 : 0.6,
+            // transition: 'opacity 0.2s ease',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "0",
+          }}
+        >
+          Submit now
+        </button>
       </div>
 
       {/* DNS White Logo */}
