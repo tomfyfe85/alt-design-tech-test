@@ -9,7 +9,7 @@ export default function Toast({ message, type }: ToastProps) {
       style={{
         position: 'fixed',
         top: '20px',
-        right: '35px',
+        right: 'max(20px, calc((100vw - 1200px) / 2))',
         padding: '24px 40px',
         backgroundColor: type === 'success' ? '#FFA000' : '#FF3333',
         color: 'white',
@@ -17,7 +17,7 @@ export default function Toast({ message, type }: ToastProps) {
         fontFamily: 'Inter',
         fontSize: '28px',
         fontWeight: '500',
-        zIndex: 1000,
+        zIndex: 9999,
         boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)',
         animation: 'fadeIn 0.3s ease-out'
       }}
