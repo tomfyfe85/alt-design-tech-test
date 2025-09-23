@@ -1,4 +1,21 @@
-export default function TestimonialCarousel() {
+import { useState } from 'react';
+
+interface Testimonial {
+  id: number;
+  quote: string;
+  author: string;
+  company: string;
+  backgroundImage: string;
+}
+
+interface TestimonialCarouselProps {
+  testimonials: Testimonial[];
+}
+
+export default function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const currentTestimonial = testimonials[currentSlide];
   return (
     <div
       className="relative overflow-hidden"
@@ -18,7 +35,7 @@ export default function TestimonialCarousel() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"
         style={{
-          backgroundImage: `url('forest-image.jpg')`,
+          backgroundImage: `url('${currentTestimonial?.backgroundImage || 'forest-image.jpg'}')`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-15" />
@@ -43,9 +60,7 @@ export default function TestimonialCarousel() {
                 fontSize: "33px",
               }}
             >
-              "We have been delighted with our DNS partnership. The club now has
-              direction & delivery on all document processes with a clear road
-              map for the foreseeable future."{" "}
+              "{currentTestimonial?.quote}"
             </blockquote>
             <div
               className="text-white"
@@ -57,16 +72,45 @@ export default function TestimonialCarousel() {
                 className="text-sm font-light"
                 style={{ fontFamily: "IBM Plex Mono" }}
               >
-                Paul Johnson, Director
+                {currentTestimonial?.author}
               </div>
               <div
                 className="text-sm font-light"
                 style={{ fontFamily: "IBM Plex Mono" }}
               >
-                Nottingham Forest Football Club
+                {currentTestimonial?.company}
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Navigation Dots */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "20px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            display: "flex",
+            gap: "10px",
+            zIndex: 20,
+          }}
+        >
+          {testimonials.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              style={{
+                width: "12px",
+                height: "12px",
+                borderRadius: "50%",
+                border: "none",
+                backgroundColor: currentSlide === index ? "white" : "rgba(255, 255, 255, 0.5)",
+                cursor: "pointer",
+                transition: "background-color 0.3s ease",
+              }}
+            />
+          ))}
         </div>
       </div>
     </div>

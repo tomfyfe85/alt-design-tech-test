@@ -19,11 +19,20 @@ interface FAQ {
   answer: string;
 }
 
-interface LandingPageProps {
-  faqs: FAQ[];
+interface Testimonial {
+  id: number;
+  quote: string;
+  author: string;
+  company: string;
+  backgroundImage: string;
 }
 
-export default function LandingPage({ faqs }: LandingPageProps) {
+interface LandingPageProps {
+  faqs: FAQ[];
+  testimonials: Testimonial[];
+}
+
+export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -289,7 +298,7 @@ export default function LandingPage({ faqs }: LandingPageProps) {
           }}
         />
 
-        <TestimonialCarousel />
+        <TestimonialCarousel testimonials={testimonials} />
       </section>
 
       <div
