@@ -13,7 +13,6 @@ const Footer = ({ variant = "transparent", className = "" }: FooterProps) => {
 
   const backGroundClass = variants[variant];
 
-  // Text color based on variant
   const textColorClass =
     variant === "transparent" ? "text-black" : "text-white";
 

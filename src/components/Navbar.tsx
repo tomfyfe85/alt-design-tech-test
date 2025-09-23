@@ -139,20 +139,17 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
             letterSpacing: "0%",
           }}
           onClick={() => {
-            // Pre-fill form and scroll to it
             const messageField = document.querySelector('textarea[name="message"]') as HTMLTextAreaElement;
             if (messageField) {
               messageField.value = 'CALL ME!';
               messageField.dispatchEvent(new Event('input', { bubbles: true }));
             }
 
-            // Scroll to form
             const formElement = document.getElementById('contact-form');
             if (formElement) {
               formElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
 
-            // Show toast after scroll completes (smooth scroll takes ~1-2 seconds)
             setTimeout(() => {
               const event = new CustomEvent('showCallMeBackToast');
               window.dispatchEvent(event);

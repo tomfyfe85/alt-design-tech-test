@@ -45,14 +45,12 @@ export default function ServiceCard({
           alt="service icon"
           className="absolute inset-0 w-full h-full object-contain group-hover:opacity-0 transition-opacity duration-300"
         />
-        {/* White icon - hidden by default, visible on hover */}
         <img
           src={icon.hover}
           alt="service icon"
           className="absolute inset-0 w-full h-full object-contain opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         />
       </div>
-      {/* </div> */}
 
       <h3
         className="text-[#F4207B] group-hover:text-white mb-6 transition-colors duration-100"
