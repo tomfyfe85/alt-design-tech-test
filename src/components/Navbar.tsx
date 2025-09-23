@@ -131,10 +131,13 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           Contact
         </a>
         <button
-          className={`absolute top-[69px] left-[1308px] rounded-[5px] flex items-center justify-center hover:opacity-80 ${buttonClass}`}
+          className={`absolute top-[69px] left-[1308px] rounded-[8px] flex items-center justify-center hover:opacity-80`}
           style={{
             width: "165px",
             height: "48px",
+            backgroundColor: "white",
+            color: "#31297D",
+            border: "none",
             fontFamily: "Inter",
             fontWeight: 700,
             fontSize: "18px",
