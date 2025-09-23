@@ -8,10 +8,10 @@ export default function Toast({ message, type }: ToastProps) {
     <div
       style={{
         position: 'fixed',
-        top: '120px',
-        right: 'calc((100vw - 1512px) / 2 + 8px)',
+        top: '623px',
+        right: 'calc((100vw - 1512px) / 2)',
         padding: '24px 40px',
-        backgroundColor: type === 'success' ? '#4CAF50' : '#FF9800',
+        backgroundColor: type === 'success' ? '#FFA000' : '#FF9800',
         color: 'white',
         borderRadius: '8px',
         fontFamily: 'Inter',
@@ -31,6 +31,15 @@ export default function Toast({ message, type }: ToastProps) {
             }
             to {
               opacity: 1;
+            }
+          }
+
+          @keyframes fadeOut {
+            from {
+              opacity: 1;
+            }
+            to {
+              opacity: 0;
             }
           }
         `}
