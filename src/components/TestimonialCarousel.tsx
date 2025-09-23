@@ -17,11 +17,10 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
 
   const currentTestimonial = testimonials[currentSlide];
 
-  // Auto-play functionality
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % testimonials.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -55,7 +54,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
           zIndex: 10,
         }}
       >
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"
         style={{
@@ -65,7 +63,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         <div className="absolute inset-0 bg-black opacity-15" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-between p-8">
         <div className="flex-1 flex items-center">
           <div
@@ -110,7 +107,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
           </div>
         </div>
 
-        {/* Navigation Dots */}
         <div
           style={{
             position: "absolute",
