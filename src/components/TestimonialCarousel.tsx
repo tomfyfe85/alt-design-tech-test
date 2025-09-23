@@ -103,10 +103,16 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
                 width: "21px",
                 height: "21px",
                 borderRadius: "50%",
-                border: "none",
+                border: "3px solid transparent",
                 backgroundColor: currentSlide === index ? "#FFFFFF" : "rgba(255, 255, 255, 0.5)",
                 cursor: "pointer",
-                transition: "background-color 0.3s ease",
+                transition: "all 0.3s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "#007BFF";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "transparent";
               }}
             />
           ))}
