@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "../tester.test.ts"]
+  "include": ["src", "../tester.test.ts", "pages/**/*.test.tsx"],
+  "types": ["@testing-library/jest-dom"]
 }
