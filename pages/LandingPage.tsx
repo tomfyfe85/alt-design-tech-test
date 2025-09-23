@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ServiceCard from "../src/components/ServiceCard";
 import VideoSection from "../src/components/VideoSection";
 import TestimonialCarousel from "../src/components/TestimonialCarousel";
@@ -49,6 +49,32 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
   // Limit to 9 FAQs for layout
   const displayFAQs = faqs.slice(0, 9);
+
+  // Listen for Call Me Back event from navbar
+  useEffect(() => {
+    const handleCallMeBackToast = () => {
+      setToast({
+        message: "Enter 'CALL ME!' in 'I need help with' and someone will get back to you soon",
+        type: "success",
+      });
+
+      // Start fade out after 4 seconds, remove after fade completes
+      setTimeout(() => {
+        const toastEl = document.querySelector('[style*="fadeIn"]') as HTMLElement;
+        if (toastEl) {
+          toastEl.style.animation = 'fadeOut 0.5s ease-out forwards';
+        }
+      }, 4000);
+
+      setTimeout(() => setToast(null), 4500);
+    };
+
+    window.addEventListener('showCallMeBackToast', handleCallMeBackToast);
+
+    return () => {
+      window.removeEventListener('showCallMeBackToast', handleCallMeBackToast);
+    };
+  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -1285,6 +1311,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         `}
       </style>
       <div
+        id="contact-form"
         style={{
           position: "absolute",
           top: "5287px",
