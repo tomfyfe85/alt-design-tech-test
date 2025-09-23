@@ -675,7 +675,7 @@ export default function LandingPage({ faqs }: LandingPageProps) {
                 {expandedFAQ === faq.id && (
                   <div
                     style={{
-                      padding: "0 0 20px 0",
+                      padding: "0.4cm 0 20px 0",
                       color: "rgba(255, 255, 255, 0.8)",
                       fontSize: "16px",
                       fontFamily: "IBM Plex Mono",
