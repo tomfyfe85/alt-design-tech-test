@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Testimonial {
   id: number;
@@ -16,6 +16,15 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const currentTestimonial = testimonials[currentSlide];
+
+  // Auto-play functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % testimonials.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
   return (
     <>
       <style>
