@@ -16,7 +16,7 @@ export default function ServiceCard({
 }: ServiceCardProps) {
   return (
     <div
-      className={`absolute bg-white hover:bg-[#F4207B]  text-gray-800 hover:text-white rounded-lg p-6 shadow-lg transition-all duration-300 group`}
+      className={`absolute bg-white hover:bg-[#F4207B]  text-gray-800 hover:text-white rounded-lg p-6 shadow-lg transition-all duration-100 group`}
       style={{
         width: "284px",
         height: "345px",
@@ -55,7 +55,7 @@ export default function ServiceCard({
       {/* </div> */}
 
       <h3
-        className="text-[#F4207B] group-hover:text-white mb-6 transition-colors duration-300"
+        className="text-[#F4207B] group-hover:text-white mb-6 transition-colors duration-100"
         style={{
           position: "absolute",
 
@@ -75,7 +75,7 @@ export default function ServiceCard({
       </h3>
 
       <p
-        className="text-gray-700 group-hover:text-white text-center leading-relaxed mb-6 px-4 transition-colors duration-300"
+        className="text-gray-700 group-hover:text-white text-center leading-relaxed mb-6 px-4 transition-colors duration-100"
         style={{
           position: "absolute",
 
@@ -97,7 +97,7 @@ export default function ServiceCard({
       <div className="text-center">
         <a
           href={learnMoreLink}
-          className="text-pink-500 group-hover:text-white text-sm font-medium underline hover:no-underline transition-all"
+          className="text-pink-500 group-hover:text-white text-sm font-medium underline hover:no-underline transition-all duration-100"
           style={{
             position: "absolute",
 
