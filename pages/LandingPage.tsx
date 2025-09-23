@@ -13,7 +13,17 @@ interface FormData {
   message: string;
 }
 
-export default function LandingPage() {
+interface FAQ {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+interface LandingPageProps {
+  faqs: FAQ[];
+}
+
+export default function LandingPage({ faqs }: LandingPageProps) {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -27,6 +37,10 @@ export default function LandingPage() {
     message: string;
     type: "success" | "warning";
   } | null>(null);
+  const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+
+  // Limit to 9 FAQs for layout
+  const displayFAQs = faqs.slice(0, 9);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -62,6 +76,10 @@ export default function LandingPage() {
     }
 
     setTimeout(() => setToast(null), 3000);
+  };
+
+  const toggleFAQ = (faqId: number) => {
+    setExpandedFAQ(expandedFAQ === faqId ? null : faqId);
   };
 
   const isFormValid =
@@ -628,213 +646,48 @@ export default function LandingPage() {
           </h2>
           {/* FAQ items */}
           <div style={{ marginTop: "68px" }}>
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderTop: "1px solid rgba(255, 255, 255, 0.3)",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>What services does DNS offer?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>How can I get support?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>What are your pricing options?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>Do you offer maintenance services?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>What is your response time for support?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>Do you provide training for staff?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>What industries do you specialize in?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>How do I schedule a consultation?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
-
-            <div style={{ marginBottom: "0px" }}>
-              <button
-                style={{
-                  width: "100%",
-                  padding: "19px 0",
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
-                  color: "white",
-                  fontSize: "18px",
-                  fontFamily: "Inter",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <span>What are your service level agreements?</span>
-                <span style={{ fontSize: "24px" }}>+</span>
-              </button>
-            </div>
+            {displayFAQs.map((faq, index) => (
+              <div key={faq.id} style={{ marginBottom: "0px" }}>
+                <button
+                  onClick={() => toggleFAQ(faq.id)}
+                  style={{
+                    width: "100%",
+                    padding: "19px 0",
+                    backgroundColor: "transparent",
+                    border: "none",
+                    borderTop: index === 0 ? "1px solid rgba(255, 255, 255, 0.3)" : "none",
+                    borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
+                    color: "white",
+                    fontSize: "18px",
+                    fontFamily: "Inter",
+                    textAlign: "left",
+                    cursor: "pointer",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  }}
+                >
+                  <span>{faq.question}</span>
+                  <span style={{ fontSize: "24px", transition: "transform 0.3s ease" }}>
+                    {expandedFAQ === faq.id ? "−" : "+"}
+                  </span>
+                </button>
+                {expandedFAQ === faq.id && (
+                  <div
+                    style={{
+                      padding: "0.4cm 0 20px 0",
+                      color: "rgba(255, 255, 255, 0.8)",
+                      fontSize: "16px",
+                      fontFamily: "IBM Plex Mono",
+                      lineHeight: "24px",
+                      borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+                    }}
+                  >
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
 
             {/* View all FAQs link */}
             <div style={{ marginTop: "9px", textAlign: "left" }}>
