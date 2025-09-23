@@ -89,8 +89,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
           style={{
             position: "absolute",
             bottom: "20px",
-            left: "50%",
-            transform: "translateX(-50%)",
+            left: "60px",
             display: "flex",
             gap: "10px",
             zIndex: 20,
