@@ -1434,8 +1434,18 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
         <button
           type="submit"
-          onClick={handleSubmit}
-          disabled={!isFormValid}
+          onClick={(e) => {
+            if (!isFormValid) {
+              e.preventDefault();
+              setToast({
+                message: "Complete all fields to submit",
+                type: "warning",
+              });
+              setTimeout(() => setToast(null), 3000);
+            } else {
+              handleSubmit(e);
+            }
+          }}
           style={{
             position: "absolute",
             width: "200px",
@@ -1451,7 +1461,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             fontStyle: "normal",
             lineHeight: "30px",
             letterSpacing: "0%",
-            cursor: isFormValid ? "pointer" : "not-allowed",
+            cursor: "pointer",
             borderRadius: "0px",
             opacity: isFormValid ? 1 : 0.6,
             display: "flex",
