@@ -17,20 +17,35 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
 
   const currentTestimonial = testimonials[currentSlide];
   return (
-    <div
-      className="relative overflow-hidden"
-      style={{
-        position: "absolute",
-        width: "1247px",
-        height: "596px",
-        top: "2146px",
-        left: "134px",
-        borderRadius: "10px",
-        borderWidth: "1px",
-        opacity: 1,
-        zIndex: 10,
-      }}
-    >
+    <>
+      <style>
+        {`
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}
+      </style>
+      <div
+        className="relative overflow-hidden"
+        style={{
+          position: "absolute",
+          width: "1247px",
+          height: "596px",
+          top: "2146px",
+          left: "134px",
+          borderRadius: "10px",
+          borderWidth: "1px",
+          opacity: 1,
+          zIndex: 10,
+        }}
+      >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-100"
@@ -45,12 +60,14 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
       <div className="relative z-10 h-full flex flex-col justify-between p-8">
         <div className="flex-1 flex items-center">
           <div
+            key={currentTestimonial?.id}
             style={{
               width: "742px",
               height: "269px",
               position: "absolute",
               top: "85px",
               left: "71px",
+              animation: "fadeIn 0.6s ease-in-out",
             }}
           >
             <blockquote
@@ -119,5 +136,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         </div>
       </div>
     </div>
+    </>
   );
 }
