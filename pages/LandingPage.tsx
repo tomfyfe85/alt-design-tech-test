@@ -122,10 +122,23 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     setExpandedFAQ(expandedFAQ === faqId ? null : faqId);
   };
 
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const isValidUKPhone = (phone: string) => {
+    const ukPhoneRegex = /^(?:(?:\+44)|(?:0))(?:\d{2}\s?\d{4}\s?\d{4}|\d{3}\s?\d{3}\s?\d{4}|\d{4}\s?\d{6}|\d{5}\s?\d{5})$/;
+    const cleanPhone = phone.replace(/\s/g, '');
+    return ukPhoneRegex.test(cleanPhone);
+  };
+
   const isFormValid =
     formData.name &&
     formData.email &&
+    isValidEmail(formData.email) &&
     formData.telephone &&
+    isValidUKPhone(formData.telephone) &&
     formData.company &&
     formData.message;
   return (
@@ -1437,8 +1450,16 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onClick={(e) => {
             if (!isFormValid) {
               e.preventDefault();
+              let errorMessage = "Complete all fields to submit";
+
+              if (formData.email && !isValidEmail(formData.email)) {
+                errorMessage = "Please enter a valid email address and phone number";
+              } else if (formData.telephone && !isValidUKPhone(formData.telephone)) {
+                errorMessage = "Please enter a valid email address and phone number";
+              }
+
               setToast({
-                message: "Complete all fields to submit",
+                message: errorMessage,
                 type: "warning",
               });
               setTimeout(() => setToast(null), 3000);
