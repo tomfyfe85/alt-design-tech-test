@@ -48,6 +48,13 @@ export default function LandingPage() {
       });
     } else {
       setSubmittedData(formData);
+      setFormData({
+        name: '',
+        email: '',
+        telephone: '',
+        company: '',
+        message: ''
+      });
       setToast({
         message: "Form submitted successfully!",
         type: "success",
