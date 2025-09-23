@@ -40,12 +40,12 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     message: "",
   });
 
-  const [submittedData, setSubmittedData] = useState<FormData | null>(null);
   const [toast, setToast] = useState<{
     message: string;
     type: "success" | "warning";
   } | null>(null);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+  const [submissions, setSubmissions] = useState<(FormData & { timestamp: string; id: number })[]>([]);
 
   // Limit to 9 FAQs for layout
   const displayFAQs = faqs.slice(0, 9);
@@ -86,47 +86,35 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    try {
-      // Save to file via API
-      const response = await fetch('/api/submissions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
-      });
+    const submission = {
+      ...formData,
+      timestamp: new Date().toISOString(),
+      id: Date.now(),
+    };
 
-      if (response.ok) {
-        // Clear form and show success
-        setFormData({
-          name: '',
-          email: '',
-          telephone: '',
-          company: '',
-          message: ''
-        });
-        setToast({
-          message: "Form filled out successfully!",
-          type: "success",
-        });
-      } else {
-        setToast({
-          message: "Failed to submit form. Please try again.",
-          type: "warning",
-        });
-      }
-    } catch (error) {
-      setToast({
-        message: "Failed to submit form. Please try again.",
-        type: "warning",
-      });
-    }
+    // Add to submissions state
+    setSubmissions(prev => [...prev, submission]);
+
+    // Log to console so you can see all submissions
+    console.log('New submission:', submission);
+    console.log('All submissions:', [...submissions, submission]);
+
+    // Clear form and show success
+    setFormData({
+      name: '',
+      email: '',
+      telephone: '',
+      company: '',
+      message: ''
+    });
+
+    setToast({
+      message: "Form filled out successfully!",
+      type: "success",
+    });
 
     setTimeout(() => setToast(null), 3000);
   };
