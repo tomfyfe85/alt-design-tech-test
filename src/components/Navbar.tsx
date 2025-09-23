@@ -17,12 +17,6 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
       ? ""
       : `border-b ${backGroundClass.replace("bg-", "border-")}`;
 
-  const buttonVariants = {
-    transparent: "bg-transparent border-2 border-white text-white",
-    purple700: "bg-white text-purple-900",
-  };
-
-  const buttonClass = buttonVariants[variant];
 
   return (
     <nav
