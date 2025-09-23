@@ -33,7 +33,7 @@ export const dnsTestimonials: Testimonial[] = [
     quote: "Professional, reliable, and always responsive. DNS has been our trusted IT partner for over three years.",
     author: "Emma Wilson, CEO",
     company: "Creative Design Agency",
-    backgroundImage: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1400&h=600&fit=crop&auto=format"
+    backgroundImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&h=600&fit=crop&auto=format"
   },
   {
     id: 5,
