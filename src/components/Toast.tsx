@@ -8,8 +8,8 @@ export default function Toast({ message, type }: ToastProps) {
     <div
       style={{
         position: 'fixed',
-        top: '623px',
-        right: 'calc((100vw - 1512px) / 2)',
+        top: '20px',
+        right: '35px',
         padding: '24px 40px',
         backgroundColor: type === 'success' ? '#FFA000' : '#FF3333',
         color: 'white',
