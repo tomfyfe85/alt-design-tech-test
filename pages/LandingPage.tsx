@@ -45,34 +45,36 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     type: "success" | "warning";
   } | null>(null);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
-  const [submissions, setSubmissions] = useState<(FormData & { timestamp: string; id: number })[]>([]);
+  const [submissions, setSubmissions] = useState<
+    (FormData & { timestamp: string; id: number })[]
+  >([]);
 
-  // Limit to 9 FAQs for layout
   const displayFAQs = faqs.slice(0, 9);
 
-  // Listen for Call Me Back event from navbar
   useEffect(() => {
     const handleCallMeBackToast = () => {
       setToast({
-        message: "Enter 'CALL ME!' in 'I need help with' and someone will get back to you soon",
+        message:
+          "Enter 'CALL ME!' in 'I need help with' and someone will get back to you soon",
         type: "success",
       });
 
-      // Start fade out after 4 seconds, remove after fade completes
       setTimeout(() => {
-        const toastEl = document.querySelector('[style*="fadeIn"]') as HTMLElement;
+        const toastEl = document.querySelector(
+          '[style*="fadeIn"]'
+        ) as HTMLElement;
         if (toastEl) {
-          toastEl.style.animation = 'fadeOut 0.5s ease-out forwards';
+          toastEl.style.animation = "fadeOut 0.5s ease-out forwards";
         }
       }, 4000);
 
       setTimeout(() => setToast(null), 4500);
     };
 
-    window.addEventListener('showCallMeBackToast', handleCallMeBackToast);
+    window.addEventListener("showCallMeBackToast", handleCallMeBackToast);
 
     return () => {
-      window.removeEventListener('showCallMeBackToast', handleCallMeBackToast);
+      window.removeEventListener("showCallMeBackToast", handleCallMeBackToast);
     };
   }, []);
 
@@ -95,20 +97,17 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       id: Date.now(),
     };
 
-    // Add to submissions state
-    setSubmissions(prev => [...prev, submission]);
+    setSubmissions((prev) => [...prev, submission]);
 
-    // Log to console so you can see all submissions
-    console.log('New submission:', submission);
-    console.log('All submissions:', [...submissions, submission]);
+    console.log("New submission:", submission);
+    console.log("All submissions:", [...submissions, submission]);
 
-    // Clear form and show success
     setFormData({
-      name: '',
-      email: '',
-      telephone: '',
-      company: '',
-      message: ''
+      name: "",
+      email: "",
+      telephone: "",
+      company: "",
+      message: "",
     });
 
     setToast({
@@ -200,8 +199,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             }}
           >
             Recognising your frustrations with your print environment, IT
-            services, document management & communications and finding a solution
-            to overcome them.
+            services, document management & communications and finding a
+            solution to overcome them.
           </p>
         </section>
       </div>
@@ -768,7 +767,10 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
                     padding: "19px 0",
                     backgroundColor: "transparent",
                     border: "none",
-                    borderTop: index === 0 ? "1px solid rgba(255, 255, 255, 0.3)" : "none",
+                    borderTop:
+                      index === 0
+                        ? "1px solid rgba(255, 255, 255, 0.3)"
+                        : "none",
                     borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
                     color: "white",
                     fontSize: "18px",
@@ -781,7 +783,12 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
                   }}
                 >
                   <span>{faq.question}</span>
-                  <span style={{ fontSize: "24px", transition: "transform 0.3s ease" }}>
+                  <span
+                    style={{
+                      fontSize: "24px",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
                     {expandedFAQ === faq.id ? "−" : "+"}
                   </span>
                 </button>
