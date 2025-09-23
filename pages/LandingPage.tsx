@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Hero from "../src/components/Hero";
 import ServiceCard from "../src/components/ServiceCard";
 import VideoSection from "../src/components/VideoSection";
@@ -15,21 +15,26 @@ interface FormData {
 
 export default function LandingPage() {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    telephone: '',
-    company: '',
-    message: ''
+    name: "",
+    email: "",
+    telephone: "",
+    company: "",
+    message: "",
   });
 
   const [submittedData, setSubmittedData] = useState<FormData | null>(null);
-  const [toast, setToast] = useState<{ message: string; type: 'success' | 'warning' } | null>(null);
+  const [toast, setToast] = useState<{
+    message: string;
+    type: "success" | "warning";
+  } | null>(null);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -38,21 +43,26 @@ export default function LandingPage() {
 
     if (submittedData) {
       setToast({
-        message: 'Details already entered!',
-        type: 'warning'
+        message: "Details already entered!",
+        type: "warning",
       });
     } else {
       setSubmittedData(formData);
       setToast({
-        message: 'Form submitted successfully!',
-        type: 'success'
+        message: "Form submitted successfully!",
+        type: "success",
       });
     }
 
     setTimeout(() => setToast(null), 3000);
   };
 
-  const isFormValid = formData.name && formData.email && formData.telephone && formData.company && formData.message;
+  const isFormValid =
+    formData.name &&
+    formData.email &&
+    formData.telephone &&
+    formData.company &&
+    formData.message;
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
@@ -1307,7 +1317,26 @@ export default function LandingPage() {
       </div>
 
       {/* Contact Form */}
-      <div style={{ position: 'absolute', top: '5287px', left: '849px', zIndex: 10 }}>
+      <style>
+        {`
+          input::placeholder, textarea::placeholder {
+            color: white !important;
+            opacity: 0.7 !important;
+          }
+          input:focus, textarea:focus {
+            background-color: transparent !important;
+            color: white !important;
+          }
+        `}
+      </style>
+      <div
+        style={{
+          position: "absolute",
+          top: "5287px",
+          left: "849px",
+          zIndex: 10,
+        }}
+      >
         <input
           type="text"
           name="name"
@@ -1316,24 +1345,24 @@ export default function LandingPage() {
           onChange={handleInputChange}
           required
           style={{
-            position: 'absolute',
-            width: '488px',
-            height: '55px',
-            top: '0px',
-            left: '0px',
-            border: '1px solid white',
-            backgroundColor: 'transparent',
-            color: 'white',
-            fontSize: '16px',
-            fontFamily: 'IBM Plex Mono',
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "0px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
             fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '30px',
-            letterSpacing: '0%',
-            borderRadius: '0px',
-            outline: 'none',
-            padding: '0 20px',
-            opacity: 1
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
           }}
         />
 
@@ -1345,24 +1374,24 @@ export default function LandingPage() {
           onChange={handleInputChange}
           required
           style={{
-            position: 'absolute',
-            width: '488px',
-            height: '55px',
-            top: '92px',
-            left: '0px',
-            border: '1px solid white',
-            backgroundColor: 'transparent',
-            color: 'white',
-            fontSize: '16px',
-            fontFamily: 'IBM Plex Mono',
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "92px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
             fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '30px',
-            letterSpacing: '0%',
-            borderRadius: '0px',
-            outline: 'none',
-            padding: '0 20px',
-            opacity: 1
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
           }}
         />
 
@@ -1374,24 +1403,24 @@ export default function LandingPage() {
           onChange={handleInputChange}
           required
           style={{
-            position: 'absolute',
-            width: '488px',
-            height: '55px',
-            top: '184px',
-            left: '0px',
-            border: '1px solid white',
-            backgroundColor: 'transparent',
-            color: 'white',
-            fontSize: '16px',
-            fontFamily: 'IBM Plex Mono',
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "184px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
             fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '30px',
-            letterSpacing: '0%',
-            borderRadius: '0px',
-            outline: 'none',
-            padding: '0 20px',
-            opacity: 1
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
           }}
         />
 
@@ -1403,24 +1432,24 @@ export default function LandingPage() {
           onChange={handleInputChange}
           required
           style={{
-            position: 'absolute',
-            width: '488px',
-            height: '55px',
-            top: '276px',
-            left: '0px',
-            border: '1px solid white',
-            backgroundColor: 'transparent',
-            color: 'white',
-            fontSize: '16px',
-            fontFamily: 'IBM Plex Mono',
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "276px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
             fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '30px',
-            letterSpacing: '0%',
-            borderRadius: '0px',
-            outline: 'none',
-            padding: '0 20px',
-            opacity: 1
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "0 20px",
+            opacity: 1,
           }}
         />
 
@@ -1431,25 +1460,25 @@ export default function LandingPage() {
           onChange={handleInputChange}
           required
           style={{
-            position: 'absolute',
-            width: '488px',
-            height: '55px',
-            top: '368px',
-            left: '0px',
-            border: '1px solid white',
-            backgroundColor: 'transparent',
-            color: 'white',
-            fontSize: '16px',
-            fontFamily: 'IBM Plex Mono',
+            position: "absolute",
+            width: "488px",
+            height: "55px",
+            top: "368px",
+            left: "0px",
+            border: "1px solid white",
+            backgroundColor: "transparent",
+            color: "white",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
             fontWeight: 400,
-            fontStyle: 'normal',
-            lineHeight: '30px',
-            letterSpacing: '0%',
-            borderRadius: '0px',
-            outline: 'none',
-            padding: '15px 20px',
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            borderRadius: "0px",
+            outline: "none",
+            padding: "15px 20px",
             opacity: 1,
-            resize: 'none'
+            resize: "none",
           }}
         />
 
@@ -1458,20 +1487,28 @@ export default function LandingPage() {
           onClick={handleSubmit}
           disabled={!isFormValid}
           style={{
-            position: 'absolute',
-            top: '460px',
-            right: '0px',
-            padding: '15px 30px',
-            backgroundColor: 'white',
-            color: '#C92C93',
-            border: 'none',
-            fontSize: '16px',
-            fontFamily: 'Inter',
-            fontWeight: '600',
-            cursor: isFormValid ? 'pointer' : 'not-allowed',
-            borderRadius: '0px',
+            position: "absolute",
+            width: "200px",
+            height: "55px",
+            top: "450px",
+            left: "288px",
+            backgroundColor: "#FFFFFF",
+            color: "#C92C93",
+            border: "none",
+            fontSize: "16px",
+            fontFamily: "IBM Plex Mono",
+            fontWeight: 400,
+            fontStyle: "normal",
+            lineHeight: "30px",
+            letterSpacing: "0%",
+            cursor: isFormValid ? "pointer" : "not-allowed",
+            borderRadius: "0px",
             opacity: isFormValid ? 1 : 0.6,
-            transition: 'opacity 0.2s ease'
+            // transition: 'opacity 0.2s ease',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "0",
           }}
         >
           Submit now
