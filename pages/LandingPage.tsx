@@ -40,12 +40,12 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     message: "",
   });
 
-  const [submittedData, setSubmittedData] = useState<FormData | null>(null);
   const [toast, setToast] = useState<{
     message: string;
     type: "success" | "warning";
   } | null>(null);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
+  const [submissions, setSubmissions] = useState<(FormData & { timestamp: string; id: number })[]>([]);
 
   // Limit to 9 FAQs for layout
   const displayFAQs = faqs.slice(0, 9);
@@ -89,25 +89,32 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (submittedData) {
-      setToast({
-        message: "Details already entered!",
-        type: "warning",
-      });
-    } else {
-      setSubmittedData(formData);
-      setFormData({
-        name: '',
-        email: '',
-        telephone: '',
-        company: '',
-        message: ''
-      });
-      setToast({
-        message: "Form submitted successfully!",
-        type: "success",
-      });
-    }
+    const submission = {
+      ...formData,
+      timestamp: new Date().toISOString(),
+      id: Date.now(),
+    };
+
+    // Add to submissions state
+    setSubmissions(prev => [...prev, submission]);
+
+    // Log to console so you can see all submissions
+    console.log('New submission:', submission);
+    console.log('All submissions:', [...submissions, submission]);
+
+    // Clear form and show success
+    setFormData({
+      name: '',
+      email: '',
+      telephone: '',
+      company: '',
+      message: ''
+    });
+
+    setToast({
+      message: "Form filled out successfully!",
+      type: "success",
+    });
 
     setTimeout(() => setToast(null), 3000);
   };
