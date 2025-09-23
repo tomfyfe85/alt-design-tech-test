@@ -226,7 +226,7 @@ export default function LandingPage() {
             fontFamily: "Inter",
             fontSize: "35px",
             fontWeight: "bold",
-            marginBottom: "27px",
+            marginBottom: "35px",
             textAlign: "center",
           }}
         >
@@ -239,9 +239,9 @@ export default function LandingPage() {
             <p
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "12px", // adjust as needed
-                fontWeight: 50,
-                lineHeight: "2.5",
+                fontSize: "15px", // adjust as needed
+                fontWeight: 400,
+                lineHeight: "2.2",
               }}
             >
               Recognising your frustrations with your print environment, IT
@@ -255,9 +255,9 @@ export default function LandingPage() {
             <p
               style={{
                 fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "12px",
-                fontWeight: 50,
-                lineHeight: "2.5",
+                fontSize: "15px",
+                fontWeight: 400,
+                lineHeight: "2.2",
               }}
             >
               Recognising your frustrations with your print environment, IT
@@ -776,7 +776,7 @@ export default function LandingPage() {
                 style={{
                   fontFamily: "IBM Plex Mono",
                   fontSize: "8px",
-                  fontWeight: 50,
+                  fontWeight: 400,
                   color: "white",
                   textDecoration: "none",
                   borderBottom: "1px solid rgba(255, 255, 255, 0.6)",
