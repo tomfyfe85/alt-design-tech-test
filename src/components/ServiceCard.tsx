@@ -21,6 +21,14 @@ export default function ServiceCard({
         width: "284px",
         height: "345px",
         borderRadius: "10px",
+        cursor: "pointer",
+        transition: "transform 0.15s ease",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-10px)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "translateY(0px)";
       }}
     >
       <div
