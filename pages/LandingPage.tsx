@@ -1334,6 +1334,21 @@ export default function LandingPage() {
             background-color: transparent !important;
             color: white !important;
           }
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+            -webkit-text-fill-color: white !important;
+            background-color: transparent !important;
+            background: transparent !important;
+            color: white !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+          }
+          input[type="text"], input[type="email"], input[type="tel"], textarea {
+            background-color: transparent !important;
+            color: white !important;
+          }
         `}
       </style>
       <div
