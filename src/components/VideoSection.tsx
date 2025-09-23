@@ -23,7 +23,10 @@ export default function VideoSection() {
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-start",
-        borderRadius: "10px",
+        borderTopLeftRadius: "0px",
+        borderTopRightRadius: "10px",
+        borderBottomLeftRadius: "0px",
+        borderBottomRightRadius: "10px",
         marginLeft: "110px",
       }}
     >
