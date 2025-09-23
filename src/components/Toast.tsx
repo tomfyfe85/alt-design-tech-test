@@ -11,7 +11,7 @@ export default function Toast({ message, type }: ToastProps) {
         top: '623px',
         right: 'calc((100vw - 1512px) / 2)',
         padding: '24px 40px',
-        backgroundColor: type === 'success' ? '#FFA000' : '#FF9800',
+        backgroundColor: type === 'success' ? '#FFA000' : '#FF3333',
         color: 'white',
         borderRadius: '8px',
         fontFamily: 'Inter',
