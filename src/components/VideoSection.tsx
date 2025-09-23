@@ -6,8 +6,8 @@ export default function VideoSection() {
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
-      video.play().catch((error) => {
-        console.log("Autoplay failed:", error);
+      video.play().catch(() => {
+        // Autoplay failed, user interaction required
       });
     }
   }, []);

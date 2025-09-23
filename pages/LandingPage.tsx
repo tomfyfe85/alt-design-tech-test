@@ -45,9 +45,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     type: "success" | "warning";
   } | null>(null);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
-  const [submissions, setSubmissions] = useState<
-    (FormData & { timestamp: string; id: number })[]
-  >([]);
 
   const displayFAQs = faqs.slice(0, 9);
 
@@ -90,17 +87,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    const submission = {
-      ...formData,
-      timestamp: new Date().toISOString(),
-      id: Date.now(),
-    };
-
-    setSubmissions((prev) => [...prev, submission]);
-
-    console.log("New submission:", submission);
-    console.log("All submissions:", [...submissions, submission]);
 
     setFormData({
       name: "",
