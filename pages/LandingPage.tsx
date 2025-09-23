@@ -86,26 +86,45 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (submittedData) {
+    try {
+      // Save to file via API
+      const response = await fetch('/api/submissions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      if (response.ok) {
+        // Clear form and show success
+        setFormData({
+          name: '',
+          email: '',
+          telephone: '',
+          company: '',
+          message: ''
+        });
+        setToast({
+          message: "Form filled out successfully!",
+          type: "success",
+        });
+      } else {
+        setToast({
+          message: "Failed to submit form. Please try again.",
+          type: "warning",
+        });
+      }
+    } catch (error) {
       setToast({
-        message: "Details already entered!",
+        message: "Failed to submit form. Please try again.",
         type: "warning",
-      });
-    } else {
-      setSubmittedData(formData);
-      setFormData({
-        name: '',
-        email: '',
-        telephone: '',
-        company: '',
-        message: ''
-      });
-      setToast({
-        message: "Form submitted successfully!",
-        type: "success",
       });
     }
 
