@@ -88,7 +88,7 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         <div
           style={{
             position: "absolute",
-            bottom: "20px",
+            top: "507px",
             left: "60px",
             display: "flex",
             gap: "10px",
