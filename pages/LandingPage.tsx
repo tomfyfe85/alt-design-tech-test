@@ -133,15 +133,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       {toast && <Toast message={toast.message} type={toast.type} />}
       <section className="relative w-full min-h-screen bg-[#31297D] flex items-center overflow-hidden">
         {/* Background geometric pattern */}
-        <div
-          className="absolute inset-0 w-full h-full opacity-30"
-          style={{
-            backgroundImage: "url('/Geomteric1.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right center",
-            backgroundSize: "cover",
-          }}
-        />
+        <div className="absolute inset-0 w-full h-full opacity-250 bg-no-repeat bg-top-right bg-contain bg-[url('/Geomteric1.png')]" />
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
@@ -161,7 +153,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
 
           {/* Right side - Laptop and router image */}
-          <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-270px]">
+          <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-190px]">
             <img
               src="/svg/laptop-router.svg"
               alt="Laptop and Router"
