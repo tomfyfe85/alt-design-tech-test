@@ -18,7 +18,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
       : `border-b ${backGroundClass.replace("bg-", "border-")}`;
 
   return (
-    <nav className={`sticky z-20 text-white w-full ${backGroundClass}`}>
+    <nav className={`absolute top-0 z-20 text-white w-full ${backGroundClass}`}>
       <div className={`w-full pt-10 pb-8 ${borderClass}`}>
         {/* Top row */}
         <div className="flex justify-between mb-4">
@@ -61,7 +61,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               Request support
             </a>
             <button
-              className="bg-white text-purple-700 px-12 py-5 rounded-xl font-semibold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-10"
+              className="bg-white text-[#31297D] px-12 py-5 rounded-xl font-semibold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-10"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'

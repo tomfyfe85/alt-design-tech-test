@@ -99,79 +99,42 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
-      <div>
-        <section
-          className="relative w-[1512px] h-[742px] absolute top-[1px] left-[-8px]"
-          style={{ backgroundColor: "#31297D" }}
-        >
+      <section className="relative w-full min-h-screen bg-[#31297D] flex items-center">
+          {/* Background geometric pattern */}
           <div
-            className="absolute top-[-262.26] left-[291px] w-[1348px] h-[1501.5px]"
+            className="absolute inset-0 w-full h-full opacity-20"
             style={{
               backgroundImage: "url('/Geomteric1.png')",
               backgroundRepeat: "no-repeat",
+              backgroundPosition: "center right",
+              backgroundSize: "contain",
             }}
           />
 
-          <div
-            className="absolute"
-            style={{
-              top: "212px",
-              left: "841px",
-              width: "489.68px",
-              height: "480px",
-              backgroundImage: "url(/lap-top-and-router.png)",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          />
+          <div className="w-full flex justify-between items-center px-32 pt-40 pb-20">
+            {/* Left side - Text content */}
+            <div className="flex-1 max-w-2xl">
+              <h1 className="text-white text-[70px] font-inter font-bold leading-tight mb-8">
+                We make your<br />
+                IT work easy.
+              </h1>
+              <p className="text-white text-[18px] font-mono leading-relaxed max-w-xl">
+                Recognising your frustrations with your print environment, IT
+                services, document management & communications and finding a solution
+                to overcome them.
+              </p>
+            </div>
 
-          <h1
-            className="absolute top-[249px] left-[133px] text-white text-[70px]"
-            style={{
-              fontFamily: "Inter",
-              fontWeight: 700,
-              lineHeight: "100%",
-              letterSpacing: "0%",
-              width: "463px",
-              height: "85px",
-              top: "249px",
-              left: "133px",
-              whiteSpace: "nowrap",
-            }}
-          >
-            We make your
-          </h1>
-          <h1
-            className="absolute top-[318px] left-[133px] text-white text-[70px]"
-            style={{
-              fontFamily: "Inter",
-              fontWeight: 700,
-              lineHeight: "100%",
-              letterSpacing: "0%",
-              width: "412px",
-              height: "85px",
-              whiteSpace: "nowrap",
-            }}
-          >
-            IT work easy.
-          </h1>
-          <p
-            className="absolute top-[412px] left-[133px] text-white text-[16px]"
-            style={{
-              fontFamily: "IBM Plex Mono",
-              fontWeight: 400,
-              lineHeight: "30px",
-              letterSpacing: "0%",
-              width: "567px",
-              height: "90px",
-            }}
-          >
-            Recognising your frustrations with your print environment, IT
-            services, document management & communications and finding a solution
-            to overcome them.
-          </p>
+            {/* Right side - Laptop and router image */}
+            <div className="flex-1 flex justify-center items-center">
+              <img
+                src="/svg/laptop-router.svg"
+                alt="Laptop and Router"
+                className="w-[490px] h-[480px] object-contain"
+              />
+            </div>
+          </div>
         </section>
-      </div>
       <div style={{ position: "absolute", top: "662px", left: "132px" }}>
         <ServiceCard
           title="IT Services"
