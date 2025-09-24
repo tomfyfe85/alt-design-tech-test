@@ -25,28 +25,28 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         {/* Top row */}
         <div className="flex justify-between items-center mb-4">
           {/* Left side - Logo and contact info */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-[-74px]">
             <img
               src="/svg/dns-white1.svg"
               alt="DNS Document Network Services"
               className="w-[272px] h-[169px]"
             />
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 -mt-[146px]">
               <a
                 href="tel:08450340895"
-                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-2xl font-mono font-medium hover:opacity-80 transition-opacity ml-[69px] mt-[8px]"
               >
                 0845 034 0895
               </a>
               <a
                 href="/about"
-                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-2xl font-mono font-medium hover:opacity-80 transition-opacity ml-[35px]"
               >
                 About us
               </a>
               <a
                 href="/careers"
-                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-2xl font-mono font-medium hover:opacity-80 transition-opacity"
               >
                 Careers
               </a>
