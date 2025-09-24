@@ -145,16 +145,18 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
-          <div className="flex-1 max-w-4xl pr-16 mt-[-680px] ml-[166px]">
+          <div className="flex-1 max-w-4xl pr-16 mt-[-680px] ml-[155px]">
             <h1 className="text-white text-[120px] font-inter font-bold leading-[1.0] mb-10 tracking-tight">
               We make your
               <br />
               IT work easy.
             </h1>
-            <p className="text-white text-[20px] font-mono leading-[1.6] max-w-2xl opacity-90">
-              Recognising your frustrations with your print environment, IT
-              services, document management & communications and finding a
-              solution to overcome them.
+            <p className="text-white text-[24px] font-mono leading-[1.6] max-w-3xl opacity-90">
+              Recognising your frustrations with your print environment,
+              <br />
+              IT services, document management & communications and
+              <br />
+              finding a solution to overcome them.
             </p>
           </div>
 
