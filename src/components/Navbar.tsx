@@ -21,7 +21,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     <nav className={`sticky z-20 text-white w-full ${backGroundClass}`}>
       <div className={`w-full pt-10 pb-8 ${borderClass}`}>
         {/* Top row */}
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-between mb-4">
           {/* Left side - Logo and contact info */}
           <div className="flex">
             <img
@@ -32,20 +32,20 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
             <div className="flex">
               <a
                 href="tel:08450340895"
-                className="text-white text-[27px] font-mono font-medium hover:opacity-80 transition-opacity ml-16 mt-5"
+                className="text-white text-[27px] font-mono  hover:opacity-80 transition-opacity ml-16 mt-5"
               >
                 0845 034 0895
               </a>
               <a
                 href="/about"
-                className="text-white text-[27px] font-mono font-medium hover:opacity-80 transition-opacity ml-16 mt-5"
+                className="text-white text-[27px] font-mono hover:opacity-80 transition-opacity ml-16 mt-5"
               >
                 About us
               </a>
 
               <a
                 href="/careers"
-                className="text-white text-[27px] font-mono font-medium hover:opacity-80 transition-opacity ml-16 mt-5"
+                className="text-white text-[27px] font-mono hover:opacity-80 transition-opacity ml-16 mt-5"
               >
                 Careers
               </a>
@@ -53,15 +53,15 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           </div>
 
           {/* Right side - Support and Call Me Back button */}
-          <div className="flex items-center gap-4 lg:gap-6">
+          <div className="flex flex-col items-end">
             <a
               href="/support"
-              className="text-white text-lg lg:text-xl font-mono font-medium hover:opacity-80 transition-opacity"
+              className="text-white text-[26px] font-mono hover:opacity-80 transition-opacity mr-16 mt-4"
             >
               Request support
             </a>
-            <button
-              className="bg-white text-[#31297D] px-6 lg:px-10 py-3 lg:py-5 rounded-lg font-bold text-lg lg:text-2xl hover:opacity-80 transition-opacity"
+            {/* <button
+              className="bg-white text-[#31297D] px-6 lg:px-10 py-3 lg:py-5 rounded-lg font-bold text-lg lg:text-2xl hover:opacity-80 transition-opacity mt-4"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
@@ -88,13 +88,13 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               }}
             >
               Call Me Back
-            </button>
+            </button> */}
           </div>
         </div>
 
         {/* Bottom row - Main navigation */}
         <div
-          className="flex items-center"
+          className="flex"
           style={{
             marginTop: "clamp(20px, 3vh, 40px)",
             marginLeft: "clamp(20px, 4vw, 80px)",
