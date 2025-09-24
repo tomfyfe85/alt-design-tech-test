@@ -21,7 +21,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     <nav
       className={`absolute top-0 left-0 z-20 text-white w-full ${backGroundClass}`}
     >
-      <div className={`container mx-auto px-4 lg:px-8 py-8 ${borderClass}`}>
+      <div className={`w-full px-8 lg:px-12 py-8 ${borderClass}`}>
         {/* Top row */}
         <div className="flex justify-between items-center mb-4">
           {/* Left side - Logo and contact info */}
