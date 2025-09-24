@@ -131,26 +131,26 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
-      <section className="relative w-full min-h-screen bg-[#31297D] flex items-center">
+      <section className="relative w-full min-h-screen bg-[#31297D] flex items-center overflow-hidden">
           {/* Background geometric pattern */}
           <div
-            className="absolute inset-0 w-full h-full opacity-20"
+            className="absolute inset-0 w-full h-full opacity-30"
             style={{
               backgroundImage: "url('/Geomteric1.png')",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center right",
-              backgroundSize: "contain",
+              backgroundPosition: "right center",
+              backgroundSize: "cover",
             }}
           />
 
-          <div className="w-full flex justify-between items-center px-32 pt-40 pb-20">
+          <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
             {/* Left side - Text content */}
-            <div className="flex-1 max-w-2xl">
-              <h1 className="text-white text-[70px] font-inter font-bold leading-tight mb-8">
+            <div className="flex-1 max-w-3xl pr-16">
+              <h1 className="text-white text-[80px] font-inter font-bold leading-[0.9] mb-10 tracking-tight">
                 We make your<br />
-                IT work easy.
+                <span className="text-white">IT work easy.</span>
               </h1>
-              <p className="text-white text-[18px] font-mono leading-relaxed max-w-xl">
+              <p className="text-white text-[20px] font-mono leading-[1.6] max-w-2xl opacity-90">
                 Recognising your frustrations with your print environment, IT
                 services, document management & communications and finding a solution
                 to overcome them.
@@ -158,11 +158,11 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             </div>
 
             {/* Right side - Laptop and router image */}
-            <div className="flex-1 flex justify-center items-center">
+            <div className="flex-1 flex justify-end items-center pr-[160px] mt-[210px]">
               <img
                 src="/svg/laptop-router.svg"
                 alt="Laptop and Router"
-                className="w-[490px] h-[480px] object-contain"
+                className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl"
               />
             </div>
           </div>
