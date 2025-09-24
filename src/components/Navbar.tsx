@@ -21,7 +21,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
     <nav
       className={`absolute top-0 left-0 z-20 text-white w-full ${backGroundClass}`}
     >
-      <div className={`w-full px-8 lg:px-12 py-8 ${borderClass}`}>
+      <div className={`w-full px-10 pt-16 pb-8 ${borderClass}`}>
         {/* Top row */}
         <div className="flex justify-between items-center mb-4">
           {/* Left side - Logo and contact info */}
@@ -29,7 +29,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
             <img
               src="/svg/dns-white1.svg"
               alt="DNS Document Network Services"
-              className="w-72 h-40"
+              className="w-[272px] h-[169px]"
             />
             <div className="flex items-center gap-8">
               <a
@@ -95,7 +95,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
         {/* Bottom row - Main navigation */}
         <div className="flex items-center gap-8">
-          <div className="w-72"></div> {/* Spacer to align with logo */}
+          <div className="w-[272px]"></div> {/* Spacer to align with logo */}
           <div className="flex items-center gap-10 ml-8">
             <a
               href="/services"
