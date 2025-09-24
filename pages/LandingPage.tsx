@@ -145,13 +145,13 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
-          <div className="flex-1 max-w-4xl pr-16 mt-[-680px] ml-[155px]">
+          <div className="flex-1 max-w-none pr-16 mt-[-652px] ml-[155px]">
             <h1 className="text-white text-[120px] font-inter font-bold leading-[1.0] mb-10 tracking-tight">
               We make your
               <br />
               IT work easy.
             </h1>
-            <p className="text-white text-[24px] font-mono leading-[1.6] max-w-3xl opacity-90">
+            <p className="text-white text-[28px] font-mono leading-[1.6] max-w-5xl opacity-90 mt-[19px]">
               Recognising your frustrations with your print environment,
               <br />
               IT services, document management & communications and
