@@ -99,25 +99,25 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           <div className="flex items-center gap-0 ml-8">
             <a
               href="/services"
-              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
+              className="text-white text-[35px] font-bold hover:opacity-80 transition-opacity ml-4"
             >
               Services
             </a>
             <a
               href="/case-studies"
-              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
+              className="text-white text-[35px] font-bold hover:opacity-80 transition-opacity ml-[76px]"
             >
               Case Studies
             </a>
             <a
               href="/insights"
-              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
+              className="text-white text-[35px] font-bold hover:opacity-80 transition-opacity ml-[76px]"
             >
               Insights
             </a>
             <a
               href="/contact"
-              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
+              className="text-white text-[35px] font-bold hover:opacity-80 transition-opacity ml-[76px]"
             >
               Contact
             </a>
