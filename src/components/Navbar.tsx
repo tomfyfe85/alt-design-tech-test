@@ -19,7 +19,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
   return (
     <nav
-      className={`absolute top-0 left-0 z-20 text-white w-full bg-red-500 ${backGroundClass}`}
+      className={`absolute top-0 left-0 z-20 text-white w-full ${backGroundClass}`}
     >
       <div className={`container mx-auto px-4 lg:px-8 py-8 ${borderClass}`}>
         {/* Top row */}
@@ -29,24 +29,24 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
             <img
               src="/svg/dns-white1.svg"
               alt="DNS Document Network Services"
-              className="w-40 h-24"
+              className="w-72 h-40"
             />
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
               <a
                 href="tel:08450340895"
-                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
               >
-                0845 034 089555555
+                0845 034 0895
               </a>
               <a
                 href="/about"
-                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
               >
                 About us
               </a>
               <a
                 href="/careers"
-                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+                className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
               >
                 Careers
               </a>
@@ -54,15 +54,15 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           </div>
 
           {/* Right side - Support and Call Me Back button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <a
               href="/support"
-              className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+              className="text-white text-xl font-mono font-medium hover:opacity-80 transition-opacity"
             >
               Request support
             </a>
             <button
-              className="bg-white text-[#31297D] px-6 py-3 rounded-lg font-bold text-lg hover:opacity-80 transition-opacity"
+              className="bg-white text-[#31297D] px-10 py-5 rounded-lg font-bold text-2xl hover:opacity-80 transition-opacity"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
@@ -95,29 +95,29 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
         {/* Bottom row - Main navigation */}
         <div className="flex items-center gap-8">
-          <div className="w-40"></div> {/* Spacer to align with logo */}
-          <div className="flex items-center gap-8 ml-8">
+          <div className="w-72"></div> {/* Spacer to align with logo */}
+          <div className="flex items-center gap-10 ml-8">
             <a
               href="/services"
-              className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
             >
               Services
             </a>
             <a
               href="/case-studies"
-              className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
             >
               Case Studies
             </a>
             <a
               href="/insights"
-              className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
             >
               Insights
             </a>
             <a
               href="/contact"
-              className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
             >
               Contact
             </a>
