@@ -132,42 +132,43 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
       <section className="relative w-full min-h-screen bg-[#31297D] flex items-center overflow-hidden">
-          {/* Background geometric pattern */}
-          <div
-            className="absolute inset-0 w-full h-full opacity-30"
-            style={{
-              backgroundImage: "url('/Geomteric1.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "right center",
-              backgroundSize: "cover",
-            }}
-          />
+        {/* Background geometric pattern */}
+        <div
+          className="absolute inset-0 w-full h-full opacity-30"
+          style={{
+            backgroundImage: "url('/Geomteric1.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "right center",
+            backgroundSize: "cover",
+          }}
+        />
 
-          <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
-            {/* Left side - Text content */}
-            <div className="flex-1 max-w-3xl pr-16">
-              <h1 className="text-white text-[80px] font-inter font-bold leading-[0.9] mb-10 tracking-tight">
-                We make your<br />
-                <span className="text-white">IT work easy.</span>
-              </h1>
-              <p className="text-white text-[20px] font-mono leading-[1.6] max-w-2xl opacity-90">
-                Recognising your frustrations with your print environment, IT
-                services, document management & communications and finding a solution
-                to overcome them.
-              </p>
-            </div>
-
-            {/* Right side - Laptop and router image */}
-            <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-270px]">
-              <img
-                src="/svg/laptop-router.svg"
-                alt="Laptop and Router"
-                className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl"
-              />
-            </div>
+        <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
+          {/* Left side - Text content */}
+          <div className="flex-1 max-w-4xl pr-16 mt-[-680px] ml-[166px]">
+            <h1 className="text-white text-[120px] font-inter font-bold leading-[1.0] mb-10 tracking-tight">
+              We make your
+              <br />
+              IT work easy.
+            </h1>
+            <p className="text-white text-[20px] font-mono leading-[1.6] max-w-2xl opacity-90">
+              Recognising your frustrations with your print environment, IT
+              services, document management & communications and finding a
+              solution to overcome them.
+            </p>
           </div>
-        </section>
-      <div style={{ position: "absolute", top: "662px", left: "132px" }}>
+
+          {/* Right side - Laptop and router image */}
+          <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-270px]">
+            <img
+              src="/svg/laptop-router.svg"
+              alt="Laptop and Router"
+              className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+      {/* <div style={{ position: "absolute", top: "662px", left: "132px" }}>
         <ServiceCard
           title="IT Services"
           description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
@@ -213,7 +214,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           }}
           learnMoreLink="/communications"
         />
-      </div>
+      </div> */}
       <div style={{ position: "absolute", top: "1150px", left: "200px" }}>
         <img
           src="/clients-Group64.png"
