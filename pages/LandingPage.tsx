@@ -131,13 +131,13 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
-      <section className="relative w-full min-h-screen bg-[#31297D] flex items-center overflow-hidden">
+      <section className="relative w-full h-[calc(100vh-380px)] bg-[#31297D] flex items-center overflow-hidden">
         {/* Background geometric pattern */}
         <div className="absolute inset-0 w-full h-full opacity-100 bg-no-repeat bg-[position:104%_2%] bg-[length:2500px] bg-[url('/svg/Geometric1.svg')]" />
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
-          <div className="flex-1 max-w-none pr-16 mt-[-652px] ml-[155px]">
+          <div className="flex-1 max-w-none pr-16 mt-[-258px] ml-[155px]">
             <h1 className="text-white text-[120px] font-inter font-bold leading-[1.0] mb-10 tracking-tight">
               We make your
               <br />
@@ -153,7 +153,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
 
           {/* Right side - Laptop and router image */}
-          <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-190px]">
+          <div className="flex-1 flex justify-end items-center pr-[160px] mt-[38px]">
             <img
               src="/svg/laptop-router.svg"
               alt="Laptop and Router"
@@ -162,53 +162,49 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
         </div>
       </section>
-      {/* <div style={{ position: "absolute", top: "662px", left: "132px" }}>
-        <ServiceCard
-          title="IT Services"
-          description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-          icon={{
-            default: "/service-card-images/it-purple.png",
-            hover: "/service-card-images/it-white.png",
-          }}
-          learnMoreLink="/it-services"
-        />
-      </div>
-
-      <div style={{ position: "absolute", top: "662px", left: "450px" }}>
-        <ServiceCard
-          title="Managed Print Services"
-          description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-          icon={{
-            default: "/service-card-images/it-purple.png",
-            hover: "/service-card-images/it-white.png",
-          }}
-          learnMoreLink="/managed-print-services"
-        />
-      </div>
-
-      <div style={{ position: "absolute", top: "662px", left: "765px" }}>
-        <ServiceCard
-          title="Document Management"
-          description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-          icon={{
-            default: "/service-card-images/it-purple.png",
-            hover: "/service-card-images/it-white.png",
-          }}
-          learnMoreLink="/document-management"
-        />
-      </div>
-
-      <div style={{ position: "absolute", top: "662px", left: "1080px" }}>
-        <ServiceCard
-          title="Communications"
-          description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-          icon={{
-            default: "/service-card-images/communications-purple.png",
-            hover: "/service-card-images/communications-white.png",
-          }}
-          learnMoreLink="/communications"
-        />
-      </div> */}
+      {/* Service Cards Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ServiceCard
+              title="IT Services"
+              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+              icon={{
+                default: "/service-card-images/it-purple.png",
+                hover: "/service-card-images/it-white.png",
+              }}
+              learnMoreLink="/it-services"
+            />
+            <ServiceCard
+              title="Managed Print Services"
+              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+              icon={{
+                default: "/service-card-images/it-purple.png",
+                hover: "/service-card-images/it-white.png",
+              }}
+              learnMoreLink="/managed-print-services"
+            />
+            <ServiceCard
+              title="Document Management"
+              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+              icon={{
+                default: "/service-card-images/it-purple.png",
+                hover: "/service-card-images/it-white.png",
+              }}
+              learnMoreLink="/document-management"
+            />
+            <ServiceCard
+              title="Communications"
+              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+              icon={{
+                default: "/service-card-images/communications-purple.png",
+                hover: "/service-card-images/communications-white.png",
+              }}
+              learnMoreLink="/communications"
+            />
+          </div>
+        </div>
+      </section>
       <div style={{ position: "absolute", top: "1150px", left: "200px" }}>
         <img
           src="/clients-Group64.png"
