@@ -133,7 +133,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       {toast && <Toast message={toast.message} type={toast.type} />}
       <section className="relative w-full min-h-screen bg-[#31297D] flex items-center overflow-hidden">
         {/* Background geometric pattern */}
-        <div className="absolute inset-0 w-full h-full opacity-250 bg-no-repeat bg-top-right bg-contain bg-[url('/Geomteric1.png')]" />
+        <div className="absolute inset-0 w-full h-full opacity-100 bg-no-repeat bg-[position:103%_-10%] bg-[length:2400px] bg-[url('/svg/Geometric1.svg')]" />
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
