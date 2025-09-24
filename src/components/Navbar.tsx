@@ -38,12 +38,14 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               </a>
               <a
                 href="/about"
-                className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-              ></a>
+                className="text-white text-[27px] font-mono font-medium hover:opacity-80 transition-opacity ml-16 mt-5"
+              >
+                About us
+              </a>
+
               <a
                 href="/careers"
-                className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-                style={{ marginLeft: "clamp(80px, 8vw, 140px)" }}
+                className="text-white text-[27px] font-mono font-medium hover:opacity-80 transition-opacity ml-16 mt-5"
               >
                 Careers
               </a>
