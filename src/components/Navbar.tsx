@@ -61,7 +61,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               Request support
             </a>
             <button
-              className="bg-white text-purple-700 px-12 py-5 rounded-xl font-bold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-10"
+              className="bg-white text-purple-700 px-12 py-5 rounded-xl font-semibold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-10"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
@@ -93,41 +93,31 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         </div>
 
         {/* Bottom row - Main navigation */}
-        <div
-          className="flex"
-          style={{
-            marginTop: "clamp(20px, 3vh, 40px)",
-            marginLeft: "clamp(20px, 4vw, 80px)",
-          }}
-        >
-          <div style={{ width: "clamp(150px, 20vw, 300px)" }}></div>{" "}
+        <div className="flex mt-[-90px] ml-20">
+          <div className="w-72"></div>
           {/* Spacer to align with logo */}
-          <div className="flex items-center gap-0 ml-4 lg:ml-8">
+          <div className="flex items-center gap-0 ml-8">
             <a
               href="/services"
-              className="text-white text-xl lg:text-3xl xl:text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
-              style={{ marginLeft: "clamp(60px, 12vw, 200px)" }}
+              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
             >
               Services
             </a>
             <a
               href="/case-studies"
-              className="text-white text-xl lg:text-3xl xl:text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
-              style={{ marginLeft: "clamp(60px, 12vw, 200px)" }}
+              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
             >
               Case Studies
             </a>
             <a
               href="/insights"
-              className="text-white text-xl lg:text-3xl xl:text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
-              style={{ marginLeft: "clamp(60px, 12vw, 200px)" }}
+              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
             >
               Insights
             </a>
             <a
               href="/contact"
-              className="text-white text-xl lg:text-3xl xl:text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
-              style={{ marginLeft: "clamp(60px, 12vw, 200px)" }}
+              className="text-white text-[34px] font-bold hover:opacity-80 transition-opacity ml-4"
             >
               Contact
             </a>
