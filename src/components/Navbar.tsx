@@ -17,131 +17,105 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
       ? ""
       : `border-b ${backGroundClass.replace("bg-", "border-")}`;
 
-
   return (
-    <nav
-      className={`absolute top-0 left-0 z-20 text-white w-[1512px] ${backGroundClass}`}
-    >
-      <div className={`py-2 h-[120px] ${borderClass}`}>
-        <img
-          srcSet="/DNS-White-Logo-1.png 4x"
-          alt="DNS Document Network Services"
-          className="absolute top-[32px] left-[40px] w-32 h-20"
-        />
-        <a
-          href="tel:08450340895"
-          className="absolute top-[31px] left-[206px] text-white text-[13px] hover:opacity-80"
-          style={{
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          0845 034 0895
-        </a>
-        <a
-          href="/about"
-          className="absolute top-[31px] left-[341px] w-32 h-20 text-white text-[13px] hover:opacity-80"
-          style={{
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          About us
-        </a>
-        <a
-          href="/careers"
-          className="absolute top-[31px] left-[437px] w-55 h-17 text-white text-[13px] hover:opacity-80"
-          style={{
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Careers
-        </a>
-        <a
-          href="/support"
-          className="absolute top-[31px] left-[1356px] w-117 h-17 text-white text-[13px] hover:opacity-80"
-          style={{
-            fontFamily: "IBM Plex Mono",
-            fontWeight: 500,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Request support
-        </a>
-        <a
-          href="/services"
-          className="absolute top-[83px] left-[206px] text-white text-[18px] hover:opacity-80"
-          style={{
-            fontFamily: "Inter",
-            fontWeight: 700,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Services
-        </a>
-        <a
-          href="/case-studies"
-          className="absolute top-[83px] left-[313px] text-white text-[18px] hover:opacity-80"
-          style={{
-            fontFamily: "Inter",
-            fontWeight: 700,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Case Studies
-        </a>
-        <a
-          href="/insights"
-          className="absolute top-[83px] left-[460px] text-white text-[18px] hover:opacity-80"
-          style={{
-            fontFamily: "Inter",
-            fontWeight: 700,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Insights
-        </a>
-        <a
-          href="/contact"
-          className="absolute top-[83px] left-[562px] text-white text-[18px] hover:opacity-80"
-          style={{
-            fontFamily: "Inter",
-            fontWeight: 700,
-            lineHeight: "100%",
-            letterSpacing: "0%",
-          }}
-        >
-          Contact
-        </a>
-        <button
-          className={`absolute top-[69px] left-[1308px] rounded-[8px] flex items-center justify-center hover:opacity-80`}
-          style={{
-            width: "165px",
-            height: "48px",
-            backgroundColor: "white",
-            color: "#31297D",
-            border: "none",
-            fontFamily: "Inter",
-            fontWeight: 700,
-            fontSize: "18px",
-            lineHeight: "normal",
-            letterSpacing: "0%",
-          }}
-          onClick={() => console.log("Call Me Back clicked")}
-        >
-          Call Me Back
-        </button>
+    <nav className={`absolute top-0 left-0 z-20 text-white w-full ${backGroundClass}`}>
+      <div className={`container mx-auto px-4 lg:px-8 h-[120px] ${borderClass}`}>
+        {/* Top row */}
+        <div className="flex justify-between items-start pt-8">
+          {/* Left side - Logo and contact info */}
+          <div className="flex items-center gap-8">
+            <img
+              src="/svg/dns-white1.svg"
+              alt="DNS Document Network Services"
+              className="w-32 h-20"
+            />
+            <div className="hidden lg:flex items-center gap-6">
+              <a
+                href="tel:08450340895"
+                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+              >
+                0845 034 0895
+              </a>
+              <a
+                href="/about"
+                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+              >
+                About us
+              </a>
+              <a
+                href="/careers"
+                className="text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+              >
+                Careers
+              </a>
+            </div>
+          </div>
+
+          {/* Right side - Support and Call Me Back button */}
+          <div className="flex items-center gap-4">
+            <a
+              href="/support"
+              className="hidden lg:block text-white text-[13px] font-mono font-medium hover:opacity-80 transition-opacity"
+            >
+              Request support
+            </a>
+            <button
+              className="bg-white text-[#31297D] px-6 py-3 rounded-lg font-bold text-lg hover:opacity-80 transition-opacity"
+              onClick={() => {
+                const messageField = document.querySelector(
+                  'textarea[name="message"]'
+                ) as HTMLTextAreaElement;
+                if (messageField) {
+                  messageField.value = "CALL ME!";
+                  messageField.dispatchEvent(new Event("input", { bubbles: true }));
+                }
+
+                const formElement = document.getElementById("contact-form");
+                if (formElement) {
+                  formElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  });
+                }
+
+                setTimeout(() => {
+                  const event = new CustomEvent("showCallMeBackToast");
+                  window.dispatchEvent(event);
+                }, 800);
+              }}
+            >
+              Call Me Back
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom row - Main navigation */}
+        <div className="hidden lg:flex items-center gap-8 mt-4 ml-40">
+          <a
+            href="/services"
+            className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+          >
+            Services
+          </a>
+          <a
+            href="/case-studies"
+            className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+          >
+            Case Studies
+          </a>
+          <a
+            href="/insights"
+            className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+          >
+            Insights
+          </a>
+          <a
+            href="/contact"
+            className="text-white text-lg font-bold hover:opacity-80 transition-opacity"
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
   );
