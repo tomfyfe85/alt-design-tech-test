@@ -56,12 +56,12 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
           <div className="flex flex-col items-end">
             <a
               href="/support"
-              className="text-white text-[26px] font-mono hover:opacity-80 transition-opacity mr-16 mt-4"
+              className="text-white text-[22px] font-mono hover:opacity-80 transition-opacity mr-16 mt-[8px]"
             >
               Request support
             </a>
             <button
-              className="bg-white text-[#31297D] px-12 py-5 rounded-xl font-semibold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-10"
+              className="bg-white text-[#31297D] px-[50px] py-5 rounded-xl font-semibold text-[29px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-[24px]"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
