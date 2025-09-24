@@ -18,47 +18,40 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
       : `border-b ${backGroundClass.replace("bg-", "border-")}`;
 
   return (
-    <nav
-      className={`absolute top-0 left-0 z-20 text-white w-full ${backGroundClass}`}
-    >
-      <div
-        className={`w-full pt-16 pb-8 ${borderClass}`}
-        style={{
-          paddingLeft: "clamp(60px, 6vw, 120px)",
-          paddingRight: "clamp(60px, 6vw, 120px)",
-        }}
-      >
+    <nav className={`sticky z-20 text-white w-full ${backGroundClass}`}>
+      <div className={`w-full pt-10 pb-8 ${borderClass}`}>
         {/* Top row */}
         <div className="flex justify-between items-center mb-4">
           {/* Left side - Logo and contact info */}
-          <div className="flex items-center gap-[-74px]">
+          <div className="flex items-center">
             <img
               src="/svg/dns-white1.svg"
               alt="DNS Document Network Services"
               style={{
                 width: "clamp(150px, 20vw, 266px)",
                 height: "clamp(100px, 12vw, 200px)",
+                marginLeft: "clamp(20px, 4vw, 80px)",
               }}
             />
-            <div className="flex items-center gap-8 -mt-[146px]">
+            <div className="flex items-center">
               <a
                 href="tel:08450340895"
                 className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-                style={{ marginLeft: "clamp(60px, 12vw, 180px)" }}
+                style={{ marginLeft: "clamp(200px, 15vw, 300px)" }}
               >
                 0845 034 0895
               </a>
               <a
                 href="/about"
                 className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-                style={{ marginLeft: "clamp(45px, 8vw, 140px)" }}
+                style={{ marginLeft: "clamp(80px, 8vw, 140px)" }}
               >
                 About us
               </a>
               <a
                 href="/careers"
                 className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-                style={{ marginLeft: "clamp(45px, 8vw, 140px)" }}
+                style={{ marginLeft: "clamp(80px, 8vw, 140px)" }}
               >
                 Careers
               </a>
@@ -107,10 +100,10 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
 
         {/* Bottom row - Main navigation */}
         <div
-          className="absolute flex items-center gap-4 lg:gap-8"
+          className="flex items-center"
           style={{
-            top: "clamp(80px, 10vh, 120px)",
-            left: "clamp(60px, 6vw, 120px)",
+            marginTop: "clamp(20px, 3vh, 40px)",
+            marginLeft: "clamp(20px, 4vw, 80px)",
           }}
         >
           <div style={{ width: "clamp(150px, 20vw, 300px)" }}></div>{" "}

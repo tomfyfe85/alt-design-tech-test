@@ -7,7 +7,7 @@ import { dnsTestimonials } from "./data/testimonials";
 function App() {
   return (
     <div className="relative w-full">
-      <Navbar variant="transparent" />
+      <Navbar variant="purple700" />
       <LandingPage faqs={dnsLandingFAQs} testimonials={dnsTestimonials} />
       <Footer variant="transparent" />
     </div>
