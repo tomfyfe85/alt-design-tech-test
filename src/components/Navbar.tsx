@@ -94,30 +94,30 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         </div>
 
         {/* Bottom row - Main navigation */}
-        <div className="flex items-center gap-8">
+        <div className="absolute top-[133px] left-[80px] flex items-center gap-8">
           <div className="w-[272px]"></div> {/* Spacer to align with logo */}
           <div className="flex items-center gap-10 ml-8">
             <a
               href="/services"
-              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
             >
               Services
             </a>
             <a
               href="/case-studies"
-              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
             >
               Case Studies
             </a>
             <a
               href="/insights"
-              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
             >
               Insights
             </a>
             <a
               href="/contact"
-              className="text-white text-2xl font-bold hover:opacity-80 transition-opacity"
+              className="text-white text-[2.125rem] font-bold hover:opacity-80 transition-opacity"
             >
               Contact
             </a>
