@@ -158,7 +158,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             </div>
 
             {/* Right side - Laptop and router image */}
-            <div className="flex-1 flex justify-end items-center pr-[160px] mt-[210px]">
+            <div className="flex-1 flex justify-end items-center pr-[160px] mt-[-270px]">
               <img
                 src="/svg/laptop-router.svg"
                 alt="Laptop and Router"
