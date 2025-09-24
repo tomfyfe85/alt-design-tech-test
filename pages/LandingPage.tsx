@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ServiceCard from "../src/components/ServiceCard";
 import VideoSection from "../src/components/VideoSection";
 import TestimonialCarousel from "../src/components/TestimonialCarousel";
@@ -40,15 +40,40 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     message: "",
   });
 
-  const [submittedData, setSubmittedData] = useState<FormData | null>(null);
   const [toast, setToast] = useState<{
     message: string;
     type: "success" | "warning";
   } | null>(null);
   const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null);
 
-  // Limit to 9 FAQs for layout
   const displayFAQs = faqs.slice(0, 9);
+
+  useEffect(() => {
+    const handleCallMeBackToast = () => {
+      setToast({
+        message:
+          "Enter 'CALL ME!' in 'I need help with' and someone will get back to you soon",
+        type: "success",
+      });
+
+      setTimeout(() => {
+        const toastEl = document.querySelector(
+          '[style*="fadeIn"]'
+        ) as HTMLElement;
+        if (toastEl) {
+          toastEl.style.animation = "fadeOut 0.5s ease-out forwards";
+        }
+      }, 4000);
+
+      setTimeout(() => setToast(null), 4500);
+    };
+
+    window.addEventListener("showCallMeBackToast", handleCallMeBackToast);
+
+    return () => {
+      window.removeEventListener("showCallMeBackToast", handleCallMeBackToast);
+    };
+  }, []);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -63,25 +88,18 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (submittedData) {
-      setToast({
-        message: "Details already entered!",
-        type: "warning",
-      });
-    } else {
-      setSubmittedData(formData);
-      setFormData({
-        name: '',
-        email: '',
-        telephone: '',
-        company: '',
-        message: ''
-      });
-      setToast({
-        message: "Form submitted successfully!",
-        type: "success",
-      });
-    }
+    setFormData({
+      name: "",
+      email: "",
+      telephone: "",
+      company: "",
+      message: "",
+    });
+
+    setToast({
+      message: "Form filled out successfully!",
+      type: "success",
+    });
 
     setTimeout(() => setToast(null), 3000);
   };
@@ -90,10 +108,24 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
     setExpandedFAQ(expandedFAQ === faqId ? null : faqId);
   };
 
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const isValidUKPhone = (phone: string) => {
+    const ukPhoneRegex =
+      /^(?:(?:\+44)|(?:0))(?:\d{2}\s?\d{4}\s?\d{4}|\d{3}\s?\d{3}\s?\d{4}|\d{4}\s?\d{6}|\d{5}\s?\d{5})$/;
+    const cleanPhone = phone.replace(/\s/g, "");
+    return ukPhoneRegex.test(cleanPhone);
+  };
+
   const isFormValid =
     formData.name &&
     formData.email &&
+    isValidEmail(formData.email) &&
     formData.telephone &&
+    isValidUKPhone(formData.telephone) &&
     formData.company &&
     formData.message;
   return (
@@ -302,7 +334,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </a>
         </div>
 
-        {/* Black background rectangle */}
         <div
           style={{
             position: "absolute",
@@ -316,7 +347,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           }}
         />
 
-        {/* Geometric2 Image */}
         <img
           src="/Geometric2.png"
           alt="Geometric2"
@@ -348,7 +378,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           zIndex: 2,
         }}
       >
-        {/* Title in Inter */}
         <h2
           style={{
             fontFamily: "Inter",
@@ -361,7 +390,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           The business process problem solvers.
         </h2>
 
-        {/* Body text in IBM Plex Mono */}
         <div style={{ display: "flex", gap: "20px" }}>
           <div style={{ flex: 1 }}>
             <p
@@ -408,7 +436,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           zIndex: 10,
         }}
       >
-        {/* Left side - Insights & News */}
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
@@ -431,7 +458,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           >
             Insights & News
           </h2>
-          {/* MS Loop Clickable Card */}
           <a
             href="/blog/microsoft-loop"
             style={{
@@ -453,7 +479,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
-            {/* MS Loop Image */}
             <img
               src="/ms-loop.jpg"
               alt="MS Loop"
@@ -466,7 +491,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               }}
             />
 
-            {/* Date beneath MS Loop */}
             <div
               style={{
                 position: "absolute",
@@ -487,7 +511,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               15/06/2024
             </div>
 
-            {/* MS Loop Title */}
             <div
               style={{
                 position: "absolute",
@@ -509,7 +532,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             </div>
           </a>
 
-          {/* Xerox Clickable Card */}
           <a
             href="/blog/xerox"
             style={{
@@ -531,7 +553,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
-            {/* Xerox Image */}
             <img
               src="/xerox.jpg"
               alt="Xerox"
@@ -544,7 +565,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               }}
             />
 
-            {/* Date beneath Xerox */}
             <div
               style={{
                 position: "absolute",
@@ -565,7 +585,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               15/06/2024
             </div>
 
-            {/* Xerox Description */}
             <div
               style={{
                 position: "absolute",
@@ -585,7 +604,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             </div>
           </a>
 
-          {/* MS Loop Small Clickable Card */}
           <a
             href="/blog/microsoft-loop-small"
             style={{
@@ -607,7 +625,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               e.currentTarget.style.transform = "translateY(0px)";
             }}
           >
-            {/* MS Loop Small Image */}
             <img
               src="/ms-loop-small.jpg"
               alt="MS Loop Small"
@@ -620,7 +637,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               }}
             />
 
-            {/* Date beneath MS Loop Small */}
             <div
               style={{
                 position: "absolute",
@@ -641,7 +657,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               15/06/2024
             </div>
 
-            {/* MS Loop Small Title */}
             <div
               style={{
                 position: "absolute",
@@ -662,10 +677,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               What is Microsoft Loop and how does it work
             </div>
           </a>
-          {/* Blog cards */}
         </div>
 
-        {/* Right side - FAQs */}
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
@@ -687,7 +700,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           >
             FAQ's
           </h2>
-          {/* FAQ items */}
           <div style={{ marginTop: "68px" }}>
             {displayFAQs.map((faq, index) => (
               <div key={faq.id} style={{ marginBottom: "0px" }}>
@@ -698,7 +710,10 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
                     padding: "19px 0",
                     backgroundColor: "transparent",
                     border: "none",
-                    borderTop: index === 0 ? "1px solid rgba(255, 255, 255, 0.3)" : "none",
+                    borderTop:
+                      index === 0
+                        ? "1px solid rgba(255, 255, 255, 0.3)"
+                        : "none",
                     borderBottom: "1px solid rgba(255, 255, 255, 0.3)",
                     color: "white",
                     fontSize: "18px",
@@ -711,7 +726,12 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
                   }}
                 >
                   <span>{faq.question}</span>
-                  <span style={{ fontSize: "24px", transition: "transform 0.3s ease" }}>
+                  <span
+                    style={{
+                      fontSize: "24px",
+                      transition: "transform 0.3s ease",
+                    }}
+                  >
                     {expandedFAQ === faq.id ? "−" : "+"}
                   </span>
                 </button>
@@ -732,7 +752,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
               </div>
             ))}
 
-            {/* View all FAQs link */}
             <div style={{ marginTop: "9px", textAlign: "left" }}>
               <a
                 href="/faqs"
@@ -755,7 +774,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         </div>
       </div>
 
-      {/* A team of accredited experts title */}
       <div
         style={{
           position: "absolute",
@@ -779,7 +797,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         that support you
       </div>
 
-      {/* Business Years Image */}
       <img
         src="/accredited-experts/buisness-years.png"
         alt="Business Years"
@@ -795,7 +812,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Business Years Text */}
       <div
         style={{
           position: "absolute",
@@ -817,7 +833,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Business years
       </div>
 
-      {/* On-Site Support Image */}
       <img
         src="/accredited-experts/on-site-support.png"
         alt="On-Site Support"
@@ -833,7 +848,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Expert Team Members Image */}
       <img
         src="/accredited-experts/expert-tem-members.png"
         alt="Expert Team Members"
@@ -849,7 +863,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Accreditations & Awards Image */}
       <img
         src="/accredited-experts/accreditations-&-awards.png"
         alt="Accreditations & Awards"
@@ -865,7 +878,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Guided Training Image */}
       <img
         src="/accredited-experts/guided-training.png"
         alt="Guided Training"
@@ -881,7 +893,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Live Contracts Image */}
       <img
         src="/accredited-experts/live-contracts.png"
         alt="Live Contracts"
@@ -897,7 +908,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* On-Site Support Text */}
       <div
         style={{
           position: "absolute",
@@ -919,7 +929,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         On-Site Support
       </div>
 
-      {/* Expert Team Members Text */}
       <div
         style={{
           position: "absolute",
@@ -941,7 +950,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Expert Team Members
       </div>
 
-      {/* Accreditations & Awards Text */}
       <div
         style={{
           position: "absolute",
@@ -963,7 +971,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Accreditations & Awards
       </div>
 
-      {/* Guided Training Text */}
       <div
         style={{
           position: "absolute",
@@ -985,7 +992,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Guided Training
       </div>
 
-      {/* Live Contracts Text */}
       <div
         style={{
           position: "absolute",
@@ -1007,7 +1013,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Live Contracts
       </div>
 
-      {/* Lorem ipsum content */}
       <div
         style={{
           position: "absolute",
@@ -1028,7 +1033,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Lorem ipsum content - second instance */}
       <div
         style={{
           position: "absolute",
@@ -1049,7 +1053,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Lorem ipsum content - third instance */}
       <div
         style={{
           position: "absolute",
@@ -1070,7 +1073,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Lorem ipsum content - fourth instance */}
       <div
         style={{
           position: "absolute",
@@ -1091,7 +1093,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Lorem ipsum content - fifth instance */}
       <div
         style={{
           position: "absolute",
@@ -1112,7 +1113,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Lorem ipsum content - sixth instance */}
       <div
         style={{
           position: "absolute",
@@ -1133,7 +1133,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.
       </div>
 
-      {/* Pink background section */}
       <div
         style={{
           position: "absolute",
@@ -1147,7 +1146,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Geometric3 Image */}
       <img
         src="/Geometric3.png"
         alt="Geometric3"
@@ -1157,12 +1155,10 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           height: "781.66px",
           top: "5307.67px",
           left: "-17.59px",
-          //   transform: "rotate(0deg)",
           opacity: 100,
         }}
       />
 
-      {/* We're your IT Services problem solvers title */}
       <div
         style={{
           position: "absolute",
@@ -1194,7 +1190,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         problem solvers
       </div>
 
-      {/* Description paragraph */}
       <div
         style={{
           position: "absolute",
@@ -1219,7 +1214,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         Get in touch today!
       </div>
 
-      {/* Contact Form */}
       <style>
         {`
           input::placeholder, textarea::placeholder {
@@ -1248,6 +1242,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         `}
       </style>
       <div
+        id="contact-form"
         style={{
           position: "absolute",
           top: "5287px",
@@ -1402,8 +1397,31 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
         <button
           type="submit"
-          onClick={handleSubmit}
-          disabled={!isFormValid}
+          onClick={(e) => {
+            if (!isFormValid) {
+              e.preventDefault();
+              let errorMessage = "Complete all fields to submit";
+
+              if (formData.email && !isValidEmail(formData.email)) {
+                errorMessage =
+                  "Please enter a valid email address and phone number";
+              } else if (
+                formData.telephone &&
+                !isValidUKPhone(formData.telephone)
+              ) {
+                errorMessage =
+                  "Please enter a valid email address and phone number";
+              }
+
+              setToast({
+                message: errorMessage,
+                type: "warning",
+              });
+              setTimeout(() => setToast(null), 3000);
+            } else {
+              handleSubmit(e);
+            }
+          }}
           style={{
             position: "absolute",
             width: "200px",
@@ -1419,10 +1437,9 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             fontStyle: "normal",
             lineHeight: "30px",
             letterSpacing: "0%",
-            cursor: isFormValid ? "pointer" : "not-allowed",
+            cursor: "pointer",
             borderRadius: "0px",
             opacity: isFormValid ? 1 : 0.6,
-            // transition: 'opacity 0.2s ease',
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -1433,7 +1450,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         </button>
       </div>
 
-      {/* DNS White Logo */}
       <img
         src="/DNS-White-Logo-3.png"
         alt="DNS Logo"
@@ -1448,8 +1464,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         }}
       />
 
-      {/* Footer Content */}
-      {/* Contact us section */}
       <div
         style={{
           position: "absolute",
@@ -1503,7 +1517,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         </div>
       </div>
 
-      {/* Address section */}
       <div
         style={{
           position: "absolute",
@@ -1523,7 +1536,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div>DE24 8AJ</div>
       </div>
 
-      {/* Opening hours section */}
       <div
         style={{
           position: "absolute",
@@ -1541,7 +1553,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div>9 am - 5:30 pm</div>
       </div>
 
-      {/* About us section */}
       <div
         style={{
           position: "absolute",
@@ -1560,7 +1571,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div>Meet the team</div>
       </div>
 
-      {/* Services section */}
       <div
         style={{
           position: "absolute",
