@@ -61,7 +61,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               Request support
             </a>
             <button
-              className="bg-white text-[#31297D] px-[50px] py-5 rounded-xl font-semibold text-[29px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-[24px]"
+              className="bg-white text-[#31297D] px-[50px] py-5 rounded-xl font-semibold text-[29px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-[36px]"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
