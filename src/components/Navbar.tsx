@@ -60,8 +60,8 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
             >
               Request support
             </a>
-            {/* <button
-              className="bg-white text-[#31297D] px-6 lg:px-10 py-3 lg:py-5 rounded-lg font-bold text-lg lg:text-2xl hover:opacity-80 transition-opacity mt-4"
+            <button
+              className="bg-white text-purple-700 px-12 py-5 rounded-xl font-bold text-[36px] tracking-wider hover:opacity-80 transition-opacity mr-16 mt-4"
               onClick={() => {
                 const messageField = document.querySelector(
                   'textarea[name="message"]'
@@ -88,7 +88,7 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
               }}
             >
               Call Me Back
-            </button> */}
+            </button>
           </div>
         </div>
 
