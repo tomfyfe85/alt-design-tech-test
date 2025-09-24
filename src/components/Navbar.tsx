@@ -23,21 +23,20 @@ const Navbar = ({ variant = "transparent" }: NavbarProps) => {
         {/* Top row */}
         <div className="flex justify-between items-center mb-4">
           {/* Left side - Logo and contact info */}
-          <div className="flex items-center">
+          <div className="flex">
             <img
               src="/svg/dns-white1.svg"
               alt="DNS Document Network Services"
-              style={{
-                width: "clamp(150px, 20vw, 266px)",
-                height: "clamp(100px, 12vw, 200px)",
-                marginLeft: "clamp(20px, 4vw, 80px)",
-              }}
+              className="w-66 h-46 ml-22 mt-3"
             />
-            <div className="flex items-center">
+            <div className="flex">
               <a
                 href="tel:08450340895"
-                className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity mt-[0.5vh]"
-                style={{ marginLeft: "clamp(200px, 15vw, 300px)" }}
+                className="text-white text-lg md:text-xl lg:text-2xl font-mono font-medium hover:opacity-80 transition-opacity"
+                style={{
+                  marginLeft: "clamp(20px, 4vw, 80px)",
+                  marginTop: "clamp(10px, 1vh, 1px)", // Add this for vertical positioning
+                }}
               >
                 0845 034 0895
               </a>
