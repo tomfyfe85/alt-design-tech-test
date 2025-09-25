@@ -171,8 +171,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             title="IT Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
             icon={{
-              default: "/service-card-images/it-purple.png",
-              hover: "/service-card-images/it-white.png",
+              default: "/svg/service-cards-svg/it-services-purple.svg",
+              hover: "/svg/service-cards-svg/it-services-white.svg",
             }}
             learnMoreLink="/it-services"
           />
@@ -180,8 +180,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             title="Managed Print Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
             icon={{
-              default: "/service-card-images/it-purple.png",
-              hover: "/service-card-images/it-white.png",
+              default: "/svg/service-cards-svg/managed-print-services-purple.svg",
+              hover: "/svg/service-cards-svg/managed-print-services-white.svg",
             }}
             learnMoreLink="/managed-print-services"
           />
@@ -189,8 +189,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             title="Document Management"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
             icon={{
-              default: "/service-card-images/it-purple.png",
-              hover: "/service-card-images/it-white.png",
+              default: "/svg/service-cards-svg/document-management-purple.svg",
+              hover: "/svg/service-cards-svg/document-management-white.svg",
             }}
             learnMoreLink="/document-management"
           />
@@ -198,8 +198,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             title="Communications"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
             icon={{
-              default: "/service-card-images/communications-purple.png",
-              hover: "/service-card-images/communications-white.png",
+              default: "/svg/service-cards-svg/communications-purple.svg",
+              hover: "/svg/service-cards-svg/communications-white.svg",
             }}
             learnMoreLink="/communications"
           />

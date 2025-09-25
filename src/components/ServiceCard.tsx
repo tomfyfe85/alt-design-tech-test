@@ -17,7 +17,7 @@ export default function ServiceCard({
   return (
     <div className="bg-white hover:bg-[#F4207B] text-gray-800 hover:text-white rounded-[10px] p-6 shadow-lg transition-all duration-150 group cursor-pointer hover:-translate-y-[10px] w-[572px] h-[610px] flex flex-col items-center">
       {/* Icon Container */}
-      <div className="relative w-[50px] h-[44px] mt-[52px] mb-8">
+      <div className="relative w-[80px] h-[90px] mt-[75px] mb-8">
         <img
           src={icon.default}
           alt="service icon"
