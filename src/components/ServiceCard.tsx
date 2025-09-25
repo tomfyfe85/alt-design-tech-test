@@ -15,7 +15,7 @@ export default function ServiceCard({
   learnMoreLink,
 }: ServiceCardProps) {
   return (
-    <div className="bg-white hover:bg-[#F4207B] text-gray-800 hover:text-white rounded-[10px] p-6 shadow-lg transition-all duration-150 group cursor-pointer hover:-translate-y-[10px] w-[495px] h-[610px] flex flex-col items-center">
+    <div className="bg-white hover:bg-[#F4207B] text-gray-800 hover:text-white rounded-[10px] p-6 shadow-lg transition-all duration-150 group cursor-pointer hover:-translate-y-[10px] w-[572px] h-[610px] flex flex-col items-center">
       {/* Icon Container */}
       <div className="relative w-[50px] h-[44px] mt-[52px] mb-8">
         <img
