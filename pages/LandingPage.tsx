@@ -161,11 +161,10 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             />
           </div>
         </div>
-      </section>
-      {/* Service Cards Section */}
-      <section className="w-full bg-white py-16">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        {/* Service Cards overlapping hero section */}
+        <div className="absolute -bottom-120 left-1/2 transform -translate-x-1/2 w-full max-w-full px-8 z-30">
+          <div className="flex flex-wrap justify-center lg:justify-between items-center gap-12">
             <ServiceCard
               title="IT Services"
               description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
@@ -205,220 +204,110 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
         </div>
       </section>
-      <div style={{ position: "absolute", top: "1150px", left: "200px" }}>
-        <img
-          src="/clients-Group64.png"
-          alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
-          style={{ width: "1115px", height: "111px" }}
-        />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "1329px",
-          left: "-112px",
-          zIndex: 2,
-        }}
-      >
-        <VideoSection />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "1329px",
-          left: "1036px",
-          width: "468px",
-          height: "552px",
-          backgroundColor: "#C92C93",
-          zIndex: 1,
-          display: "flex",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          padding: "30px 40px 40px 40px",
-        }}
-      >
-        <div>
-          <h2
-            style={{
-              fontFamily: "Inter",
-              fontWeight: 700,
-              fontSize: "40px",
-              lineHeight: "46px",
-              letterSpacing: "0%",
-              color: "white",
-              textAlign: "center",
-              margin: "0 0 20px 0",
-            }}
-          >
-            Turning process frustration into progress since 1996
-          </h2>
-          <p
-            style={{
-              fontFamily: "IBM Plex Mono",
-              fontWeight: 400,
-              fontSize: "16px",
-              lineHeight: "26px",
-              letterSpacing: "0%",
-              color: "white",
-              textAlign: "center",
-              margin: 0,
-              paddingLeft: "20px",
-              paddingRight: "20px",
-            }}
-          >
-            Recognising your frustrations with your print environment, IT
-            services, document management & communications and finding a
-            solution to overcome them. Recognising your frustrations with your
-            print environment, IT services, document management & communications
-            and finding a solution to overcome them.
-          </p>
+      {/* Clients Section */}
+      <section className="w-full bg-white py-12">
+        <div className="max-w-6xl mx-auto px-8 flex justify-center">
+          <img
+            src="/clients-Group64.png"
+            alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
+            className="w-full max-w-[1115px] h-auto"
+          />
         </div>
-      </div>
-      <section>
-        <div
-          style={{
-            position: "absolute",
-            top: "2046px",
-            left: "134px",
-            width: "800px",
-            height: "150px",
-          }}
-        >
-          <h1
-            style={{
-              fontFamily: "Inter",
-              fontWeight: 700,
-              fontSize: "40px",
-              lineHeight: "58px",
-              letterSpacing: "0%",
-              margin: 0,
-            }}
-          >
-            Don't just take our word for it...
-          </h1>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "2036px",
-            left: "1000px",
-            width: "381px",
-            height: "150px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "flex-end",
-          }}
-        >
-          <a
-            href="/case-studies"
-            style={{
-              fontFamily: "IBM Plex Mono",
-              fontWeight: 400,
-              fontSize: "16px",
-              lineHeight: "26px",
-              letterSpacing: "0%",
-              color: "black",
-              textDecoration: "underline",
-            }}
-          >
-            View all Case Studies
-          </a>
-        </div>
-
-        <div
-          style={{
-            position: "absolute",
-            top: "2408px",
-            left: "0px",
-            width: "1512px",
-            height: "1960px",
-            backgroundColor: "#000000",
-            opacity: 1,
-            zIndex: 1,
-          }}
-        />
-
-        <img
-          src="/Geometric2.png"
-          alt="Geometric2"
-          style={{
-            position: "absolute",
-            width: "1348px",
-            height: "1501.497802734375px",
-            top: "2800px",
-            left: "310px",
-            transform: "rotate(0deg)",
-            opacity: 150,
-            zIndex: 5,
-          }}
-        />
-
-        <TestimonialCarousel testimonials={testimonials} />
       </section>
+      {/* Video and Testimonial Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Video Section */}
+            <div className="relative z-20">
+              <VideoSection />
+            </div>
 
-      <div
-        style={{
-          position: "absolute",
-          top: "2850px",
-          left: "250px",
-          width: "1018px",
-          height: "296px",
-          backgroundColor: "rgba(0, 0, 0, 0.8)",
-          padding: "20px",
-          color: "white",
-          zIndex: 2,
-        }}
-      >
-        <h2
-          style={{
-            fontFamily: "Inter",
-            fontSize: "35px",
-            fontWeight: "bold",
-            marginBottom: "35px",
-            textAlign: "center",
-          }}
-        >
-          The business process problem solvers.
-        </h2>
-
-        <div style={{ display: "flex", gap: "20px" }}>
-          <div style={{ flex: 1 }}>
-            <p
-              style={{
-                fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "15px", // adjust as needed
-                fontWeight: 400,
-                lineHeight: "2.2",
-              }}
-            >
-              Recognising your frustrations with your print environment, IT
-              services, document management & communications and finding a
-              solution to overcome them... Recognising your frustrations with
-              your print environment, IT services, document management &
-              communications and finding a solution to overcome them...
-            </p>
-          </div>
-          <div style={{ flex: 1 }}>
-            <p
-              style={{
-                fontFamily: "IBM Plex Mono, monospace",
-                fontSize: "15px",
-                fontWeight: 400,
-                lineHeight: "2.2",
-              }}
-            >
-              Recognising your frustrations with your print environment, IT
-              services, document management & communications and finding a
-              solution to overcome them... Recognising your frustrations with
-              your print environment, IT services, document management &
-              communications and finding a solution to overcome them...
-            </p>
+            {/* Testimonial Card */}
+            <div className="bg-[#C92C93] p-8 rounded-lg flex items-start justify-center min-h-[552px]">
+              <div className="text-center">
+                <h2 className="text-white font-inter font-bold text-[40px] leading-[46px] mb-5">
+                  Turning process frustration into progress since 1996
+                </h2>
+                <p className="text-white font-mono text-[16px] leading-[26px] px-5">
+                  Recognising your frustrations with your print environment, IT
+                  services, document management & communications and finding a
+                  solution to overcome them. Recognising your frustrations with
+                  your print environment, IT services, document management &
+                  communications and finding a solution to overcome them.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      {/* Testimonials Section */}
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-8">
+          {/* Header */}
+          <div className="flex justify-between items-center mb-16">
+            <h1 className="text-black font-inter font-bold text-[40px] leading-[58px]">
+              Don't just take our word for it...
+            </h1>
+            <a
+              href="/case-studies"
+              className="text-black font-mono text-[16px] leading-[26px] underline hover:opacity-80 transition-opacity"
+            >
+              View all Case Studies
+            </a>
+          </div>
+
+          {/* Testimonials with background */}
+          <div className="relative w-full min-h-[1960px] bg-black rounded-lg overflow-hidden">
+            {/* Background geometric pattern */}
+            <div
+              className="inset-0 opacity-15 bg-no-repeat bg-center bg-contain"
+              style={{
+                backgroundImage: "url('/Geometric2.png')",
+                backgroundSize: "80%",
+              }}
+            />
+
+            {/* Testimonial Carousel */}
+            <div className="relative z-10">
+              <TestimonialCarousel testimonials={testimonials} />
+            </div>
+
+            {/* Business Process Overlay */}
+            <div className=" top-[442px] left-1/2 transform -translate-x-1/2 w-full max-w-[1018px] bg-black/80 p-5 text-white z-20">
+              <h2 className="text-white font-inter font-bold text-[35px] mb-[35px] text-center">
+                The business process problem solvers.
+              </h2>
+
+              <div className="flex gap-5">
+                <div className="flex-1">
+                  <p className="text-white font-mono text-[15px] leading-[2.2]">
+                    Recognising your frustrations with your print environment,
+                    IT services, document management & communications and
+                    finding a solution to overcome them... Recognising your
+                    frustrations with your print environment, IT services,
+                    document management & communications and finding a solution
+                    to overcome them...
+                  </p>
+                </div>
+                <div className="flex-1">
+                  <p className="text-white font-mono text-[15px] leading-[2.2]">
+                    Recognising your frustrations with your print environment,
+                    IT services, document management & communications and
+                    finding a solution to overcome them... Recognising your
+                    frustrations with your print environment, IT services,
+                    document management & communications and finding a solution
+                    to overcome them...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div
         style={{
-          position: "absolute",
+          //   position: "absolute",
           top: "3354px",
           left: "133px",
           width: "1248px",
@@ -430,7 +319,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
-              position: "absolute",
+              //   position: "absolute",
               top: "0px",
               left: "0px",
               width: "400px",
@@ -452,7 +341,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           <a
             href="/blog/microsoft-loop"
             style={{
-              position: "absolute",
+              //   position: "absolute",
               top: "89px",
               left: "3px",
               width: "602px",
@@ -484,7 +373,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
+                // position: "absolute",
                 width: "96px",
                 height: "30px",
                 top: "263px",
@@ -504,7 +393,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
+                // position: "absolute",
                 width: "589px",
                 height: "33px",
                 top: "295px",
@@ -558,7 +447,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
+                // position: "absolute",
                 width: "96px",
                 height: "30px",
                 top: "212px",
@@ -578,7 +467,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
+                // position: "absolute",
                 top: "244px",
                 left: "0px",
                 opacity: 1,
@@ -598,7 +487,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           <a
             href="/blog/microsoft-loop-small"
             style={{
-              position: "absolute",
+              //   position: "absolute",
               top: "477px",
               left: "317px",
               width: "288px",
@@ -673,7 +562,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
-              position: "absolute",
+              //   position: "absolute",
               width: "104px",
               height: "58px",
               top: "0px",
