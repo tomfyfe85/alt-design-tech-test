@@ -36,14 +36,14 @@ export default function ServiceCard({
       </h3>
 
       {/* Description */}
-      <p className="text-gray-700 group-hover:text-white font-mono font-extralight text-[23px] leading-[42px] text-center w-[430px] mb-14 transition-colors duration-100">
+      <p className="text-gray-700 group-hover:text-white font-mono font-extralight text-[24px] leading-[47px] text-center w-[480px] mb-10 transition-colors duration-100">
         {description}
       </p>
 
       {/* Learn More Link */}
       <a
         href={learnMoreLink}
-        className="text-[#F4207B] group-hover:text-white text-[16px] font-light underline text-center transition-all duration-100"
+        className="text-[#F4207B] group-hover:text-white font-mono text-[24px] font-[300] underline text-center transition-all duration-100"
       >
         Learn More
       </a>
