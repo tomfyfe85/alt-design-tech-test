@@ -131,7 +131,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
-      <section className="relative w-full h-[calc(100vh-380px)] bg-[#31297D] flex items-center overflow-hidden">
+      <section className="relative w-full bg-[#31297D] flex items-center overflow-hidden" style={{height: 'calc(100vh - 452px)'}}>
         {/* Background geometric pattern */}
         <div className="absolute inset-0 w-full h-full opacity-100 bg-no-repeat bg-[position:106%_7%] bg-[length:2450px] bg-[url('/svg/Geometric1.svg')]" />
 
@@ -166,7 +166,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       {/* Service Cards Section */}
       <section className="w-full relative z-30">
-        <div className="flex justify-center items-center gap-[76px] px-8 transform -translate-y-[100px]">
+        <div className="flex justify-center items-center gap-[76px] px-8 pt-16 pb-48 transform -translate-y-[300px]">
           <ServiceCard
             title="IT Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
