@@ -165,8 +165,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       </section>
 
       {/* Service Cards Section */}
-      <section className="w-full relative">
-        <div className="absolute top-[-100px] left-1/2 transform -translate-x-1/2 flex justify-center items-center gap-[76px] px-8 z-30">
+      <section className="w-full relative z-30">
+        <div className="flex justify-center items-center gap-[76px] px-8 transform -translate-y-[100px]">
           <ServiceCard
             title="IT Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
