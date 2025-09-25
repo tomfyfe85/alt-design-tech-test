@@ -137,7 +137,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
         <div className="relative z-10 w-full flex justify-between items-center px-20 pt-32 pb-16">
           {/* Left side - Text content */}
-          <div className="flex-1 max-w-none pr-16 mt-[-258px] ml-[155px]">
+          <div className="flex-1 max-w-none pr-16 mt-[-258px] ml-[155px] transform translate-y-[69px]">
             <h1 className="text-white text-[120px] font-inter font-bold leading-[1.0] mb-10 tracking-tight">
               We make your
               <br />
