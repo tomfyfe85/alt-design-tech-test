@@ -209,12 +209,12 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         </div>
       </section>
       {/* Clients Section */}
-      <section className="w-full bg-white py-12">
-        <div className="max-w-6xl mx-auto px-8 flex justify-center">
+      <section className="w-full bg-white py-20">
+        <div className="max-w-none mx-auto px-4 flex justify-center">
           <img
-            src="public/svg/clients-include.svg"
+            src="/svg/clients-include.svg"
             alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
-            className="w-full max-w-[1115px] h-auto"
+            className="w-full max-w-[1400px] h-auto"
           />
         </div>
       </section>
@@ -343,79 +343,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           >
             Insights & News
           </h2>
-          <a
-            href="/blog/microsoft-loop"
-            style={{
-              //   position: "absolute",
-              top: "89px",
-              left: "3px",
-              width: "602px",
-              height: "328px",
-              display: "block",
-              textDecoration: "none",
-              zIndex: 2,
-              cursor: "pointer",
-              transition: "transform 0.15s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-10px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0px)";
-            }}
-          >
-            <img
-              src="/ms-loop.jpg"
-              alt="MS Loop"
-              style={{
-                width: "602px",
-                height: "245px",
-                borderRadius: "10px",
-                opacity: 1,
-                transform: "rotate(0deg)",
-              }}
-            />
-
-            <div
-              style={{
-                // position: "absolute",
-                width: "96px",
-                height: "30px",
-                top: "263px",
-                left: "0px",
-                opacity: 1,
-                transform: "rotate(0deg)",
-                fontFamily: "IBM Plex Mono",
-                fontWeight: 400,
-                fontSize: "16px",
-                lineHeight: "26px",
-                letterSpacing: "0%",
-                color: "white",
-              }}
-            >
-              15/06/2024
-            </div>
-
-            <div
-              style={{
-                // position: "absolute",
-                width: "589px",
-                height: "33px",
-                top: "295px",
-                left: "0px",
-                opacity: 1,
-                transform: "rotate(0deg)",
-                fontFamily: "Inter",
-                fontWeight: 700,
-                fontSize: "25px",
-                lineHeight: "33px",
-                letterSpacing: "0%",
-                color: "white",
-              }}
-            >
-              What is Microsoft Loop and how does it work
-            </div>
-          </a>
 
           <a
             href="/blog/xerox"
