@@ -157,7 +157,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             <img
               src="/svg/laptop-router.svg"
               alt="Laptop and Router"
-              className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl transform translate-y-[76px]"
+              className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl transform translate-y-[76px] scale-[1.06]"
             />
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       {/* Service Cards Section */}
       <section className="w-full relative z-30">
-        <div className="flex justify-center items-center gap-[76px] px-8 pt-16 pb-48 transform -translate-y-[300px]">
+        <div className="flex justify-center items-center gap-[76px] px-8 pt-16 pb-48 transform -translate-y-[247px]">
           <ServiceCard
             title="IT Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
