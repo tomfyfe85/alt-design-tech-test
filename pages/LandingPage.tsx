@@ -163,8 +163,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         </div>
 
         {/* Service Cards overlapping hero section */}
-        <div className="absolute -bottom-120 left-1/2 transform -translate-x-1/2 w-full max-w-full px-[228px] z-30">
-          <div className="flex flex-wrap justify-center lg:justify-between items-center gap-12">
+        <div className="absolute -bottom-120 left-1/2 transform -translate-x-1/2 w-full max-w-full px-8 z-30">
+          <div className="flex flex-wrap justify-center items-center gap-[68px]">
             <ServiceCard
               title="IT Services"
               description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
@@ -415,7 +415,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           <a
             href="/blog/xerox"
             style={{
-              // position: "absolute",
+              position: "absolute",
               top: "477px",
               left: "0px",
               width: "289px",
@@ -519,7 +519,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                // position: "absolute",
+                position: "absolute",
                 width: "96px",
                 height: "30px",
                 top: "212px",
@@ -539,7 +539,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                // position: "absolute",
+                position: "absolute",
                 width: "299px",
                 height: "66px",
                 top: "244px",
@@ -656,7 +656,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+        //   position: "absolute",
           width: "968.75390625px",
           height: "96px",
           top: "4479px",
@@ -681,7 +681,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/buisness-years.png"
         alt="Business Years"
         style={{
-          // position: "absolute",
+        //   position: "absolute",
           width: "92.529296875px",
           height: "85.70703125px",
           top: "4632.36px",
@@ -694,7 +694,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+        //   position: "absolute",
           width: "133px",
           height: "45px",
           top: "4732.44px",
@@ -717,7 +717,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/on-site-support.png"
         alt="On-Site Support"
         style={{
-          // position: "absolute",
+        //   position: "absolute",
           width: "82.16845703125px",
           height: "82.16901397705078px",
           top: "4636.65px",
@@ -732,7 +732,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/expert-tem-members.png"
         alt="Expert Team Members"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "104.63494873046875px",
           height: "99.62627410888672px",
           top: "4628.3px",
@@ -747,7 +747,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/accreditations-&-awards.png"
         alt="Accreditations & Awards"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "98.900390625px",
           height: "89.2734375px",
           top: "4870.23px",
@@ -762,7 +762,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/guided-training.png"
         alt="Guided Training"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "79.66216278076172px",
           height: "79.662109375px",
           top: "4881px",
@@ -777,7 +777,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/live-contracts.png"
         alt="Live Contracts"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "129.81298828125px",
           height: "85.707275390625px",
           top: "4870.23px",
@@ -790,7 +790,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "148px",
           height: "45px",
           top: "4732.44px",
@@ -811,7 +811,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "204px",
           height: "45px",
           top: "4732.44px",
@@ -832,7 +832,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "226px",
           height: "45px",
           top: "4970.32px",
@@ -853,7 +853,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "146px",
           height: "45px",
           top: "4970.32px",
@@ -874,7 +874,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "129px",
           height: "45px",
           top: "4970.32px",
@@ -895,7 +895,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "4772.44px",
@@ -915,7 +915,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "4772.44px",
@@ -935,7 +935,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "4772.44px",
@@ -955,7 +955,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "5010.32px",
@@ -975,7 +975,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "5010.32px",
@@ -995,7 +995,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "275px",
           height: "52px",
           top: "5010.32px",
@@ -1015,7 +1015,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "1512px",
           height: "914px",
           top: "5173px",
@@ -1030,7 +1030,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/Geometric3.png"
         alt="Geometric3"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "907.09px",
           height: "781.66px",
           top: "5307.67px",
@@ -1041,7 +1041,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "670px",
           height: "73px",
           top: "5265px",
@@ -1072,7 +1072,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "596px",
           height: "120px",
           top: "5418px",
@@ -1124,7 +1124,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       <div
         id="contact-form"
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5287px",
           left: "849px",
           zIndex: 10,
@@ -1138,7 +1138,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onChange={handleInputChange}
           required
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "488px",
             height: "55px",
             top: "0px",
@@ -1167,7 +1167,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onChange={handleInputChange}
           required
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "488px",
             height: "55px",
             top: "92px",
@@ -1196,7 +1196,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onChange={handleInputChange}
           required
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "488px",
             height: "55px",
             top: "184px",
@@ -1225,7 +1225,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onChange={handleInputChange}
           required
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "488px",
             height: "55px",
             top: "276px",
@@ -1253,7 +1253,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           onChange={handleInputChange}
           required
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "488px",
             height: "55px",
             top: "368px",
@@ -1303,7 +1303,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             }
           }}
           style={{
-            // position: "absolute",
+            position: "absolute",
             width: "200px",
             height: "55px",
             top: "450px",
@@ -1334,7 +1334,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/DNS-White-Logo-3.png"
         alt="DNS Logo"
         style={{
-          // position: "absolute",
+          position: "absolute",
           width: "94px",
           height: "57px",
           top: "5868px",
@@ -1346,7 +1346,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5858.08px",
           left: "301px",
           color: "white",
@@ -1399,7 +1399,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5858.08px",
           left: "535px",
           color: "white",
@@ -1418,7 +1418,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5858.08px",
           left: "727px",
           color: "white",
@@ -1435,7 +1435,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5858.08px",
           left: "926px",
           color: "white",
@@ -1453,7 +1453,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          // position: "absolute",
+          position: "absolute",
           top: "5858.08px",
           left: "1181px",
           color: "white",
