@@ -162,46 +162,47 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
         </div>
 
-        {/* Service Cards overlapping hero section */}
-        <div className="absolute -bottom-120 left-1/2 transform -translate-x-1/2 w-full max-w-full px-8 z-30">
-          <div className="flex flex-wrap justify-center items-center gap-[68px]">
-            <ServiceCard
-              title="IT Services"
-              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-              icon={{
-                default: "/service-card-images/it-purple.png",
-                hover: "/service-card-images/it-white.png",
-              }}
-              learnMoreLink="/it-services"
-            />
-            <ServiceCard
-              title="Managed Print Services"
-              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-              icon={{
-                default: "/service-card-images/it-purple.png",
-                hover: "/service-card-images/it-white.png",
-              }}
-              learnMoreLink="/managed-print-services"
-            />
-            <ServiceCard
-              title="Document Management"
-              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-              icon={{
-                default: "/service-card-images/it-purple.png",
-                hover: "/service-card-images/it-white.png",
-              }}
-              learnMoreLink="/document-management"
-            />
-            <ServiceCard
-              title="Communications"
-              description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
-              icon={{
-                default: "/service-card-images/communications-purple.png",
-                hover: "/service-card-images/communications-white.png",
-              }}
-              learnMoreLink="/communications"
-            />
-          </div>
+      </section>
+
+      {/* Service Cards Section */}
+      <section className="w-full relative">
+        <div className="absolute top-[-100px] left-1/2 transform -translate-x-1/2 flex justify-center items-center gap-[76px] px-8 z-30">
+          <ServiceCard
+            title="IT Services"
+            description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+            icon={{
+              default: "/service-card-images/it-purple.png",
+              hover: "/service-card-images/it-white.png",
+            }}
+            learnMoreLink="/it-services"
+          />
+          <ServiceCard
+            title="Managed Print Services"
+            description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+            icon={{
+              default: "/service-card-images/it-purple.png",
+              hover: "/service-card-images/it-white.png",
+            }}
+            learnMoreLink="/managed-print-services"
+          />
+          <ServiceCard
+            title="Document Management"
+            description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+            icon={{
+              default: "/service-card-images/it-purple.png",
+              hover: "/service-card-images/it-white.png",
+            }}
+            learnMoreLink="/document-management"
+          />
+          <ServiceCard
+            title="Communications"
+            description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
+            icon={{
+              default: "/service-card-images/communications-purple.png",
+              hover: "/service-card-images/communications-white.png",
+            }}
+            learnMoreLink="/communications"
+          />
         </div>
       </section>
       {/* Clients Section */}
