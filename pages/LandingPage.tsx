@@ -157,7 +157,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             <img
               src="/svg/laptop-router.svg"
               alt="Laptop and Router"
-              className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl transform translate-y-[76px] -translate-x-[38px]"
+              className="w-[1192px] h-[1092px] object-contain drop-shadow-2xl transform translate-y-[76px]"
             />
           </div>
         </div>
