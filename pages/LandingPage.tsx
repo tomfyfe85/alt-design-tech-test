@@ -131,7 +131,10 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
   return (
     <>
       {toast && <Toast message={toast.message} type={toast.type} />}
-      <section className="relative w-full bg-[#31297D] flex items-center overflow-hidden" style={{height: 'calc(100vh - 444px)'}}>
+      <section
+        className="relative w-full bg-[#31297D] flex items-center overflow-hidden"
+        style={{ height: "calc(100vh - 444px)" }}
+      >
         {/* Background geometric pattern */}
         <div className="absolute inset-0 w-full h-full opacity-100 bg-no-repeat bg-[position:106%_7%] bg-[length:2450px] bg-[url('/svg/Geometric1.svg')]" />
 
@@ -161,7 +164,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             />
           </div>
         </div>
-
       </section>
 
       {/* Service Cards Section */}
@@ -180,7 +182,8 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
             title="Managed Print Services"
             description="Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them."
             icon={{
-              default: "/svg/service-cards-svg/managed-print-services-purple.svg",
+              default:
+                "/svg/service-cards-svg/managed-print-services-purple.svg",
               hover: "/svg/service-cards-svg/managed-print-services-white.svg",
             }}
             learnMoreLink="/managed-print-services"
@@ -209,7 +212,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
       <section className="w-full bg-white py-12">
         <div className="max-w-6xl mx-auto px-8 flex justify-center">
           <img
-            src="/clients-Group64.png"
+            src="public/svg/clients-include.svg"
             alt="Our clients include Xerox, Microsoft, HP, 3CX, VIPRE, and Fortinet"
             className="w-full max-w-[1115px] h-auto"
           />
@@ -306,6 +309,7 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           </div>
         </div>
       </section>
+      {/* Insights & News Section */}
       <div
         style={{
           //   position: "absolute",
@@ -416,7 +420,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           <a
             href="/blog/xerox"
             style={{
-              position: "absolute",
               top: "477px",
               left: "0px",
               width: "289px",
@@ -448,7 +451,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                // position: "absolute",
                 width: "96px",
                 height: "30px",
                 top: "212px",
@@ -468,7 +470,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                // position: "absolute",
                 top: "244px",
                 left: "0px",
                 opacity: 1,
@@ -488,7 +489,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
           <a
             href="/blog/microsoft-loop-small"
             style={{
-              //   position: "absolute",
               top: "477px",
               left: "317px",
               width: "288px",
@@ -520,7 +520,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
                 width: "96px",
                 height: "30px",
                 top: "212px",
@@ -540,7 +539,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
             <div
               style={{
-                position: "absolute",
                 width: "299px",
                 height: "66px",
                 top: "244px",
@@ -563,7 +561,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         <div style={{ width: "50%", padding: "20px" }}>
           <h2
             style={{
-              //   position: "absolute",
               width: "104px",
               height: "58px",
               top: "0px",
@@ -657,7 +654,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-        //   position: "absolute",
           width: "968.75390625px",
           height: "96px",
           top: "4479px",
@@ -682,7 +678,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/buisness-years.png"
         alt="Business Years"
         style={{
-        //   position: "absolute",
           width: "92.529296875px",
           height: "85.70703125px",
           top: "4632.36px",
@@ -695,7 +690,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-        //   position: "absolute",
           width: "133px",
           height: "45px",
           top: "4732.44px",
@@ -718,7 +712,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/on-site-support.png"
         alt="On-Site Support"
         style={{
-        //   position: "absolute",
           width: "82.16845703125px",
           height: "82.16901397705078px",
           top: "4636.65px",
@@ -733,7 +726,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/expert-tem-members.png"
         alt="Expert Team Members"
         style={{
-          position: "absolute",
           width: "104.63494873046875px",
           height: "99.62627410888672px",
           top: "4628.3px",
@@ -748,7 +740,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/accreditations-&-awards.png"
         alt="Accreditations & Awards"
         style={{
-          position: "absolute",
           width: "98.900390625px",
           height: "89.2734375px",
           top: "4870.23px",
@@ -763,7 +754,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/guided-training.png"
         alt="Guided Training"
         style={{
-          position: "absolute",
           width: "79.66216278076172px",
           height: "79.662109375px",
           top: "4881px",
@@ -778,7 +768,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
         src="/accredited-experts/live-contracts.png"
         alt="Live Contracts"
         style={{
-          position: "absolute",
           width: "129.81298828125px",
           height: "85.707275390625px",
           top: "4870.23px",
@@ -791,7 +780,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          position: "absolute",
           width: "148px",
           height: "45px",
           top: "4732.44px",
@@ -812,7 +800,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          position: "absolute",
           width: "204px",
           height: "45px",
           top: "4732.44px",
@@ -833,7 +820,6 @@ export default function LandingPage({ faqs, testimonials }: LandingPageProps) {
 
       <div
         style={{
-          position: "absolute",
           width: "226px",
           height: "45px",
           top: "4970.32px",
